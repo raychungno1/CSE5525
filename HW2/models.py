@@ -1,5 +1,6 @@
 # models.py
 
+from msilib.schema import Error
 from optimizers import *
 from nerdata import *
 from utils import *
@@ -26,6 +27,7 @@ class ProbabilisticSequenceScorer(object):
         transition_log_probs: [num_tags, num_tags] matrix containing transition log probabilities (prev, curr)
         emission_log_probs: [num_tags, num_words] matrix containing emission log probabilities (tag, word)
     """
+
     def __init__(self, tag_indexer: Indexer, word_indexer: Indexer, init_log_probs: np.ndarray, transition_log_probs: np.ndarray, emission_log_probs: np.ndarray):
         self.tag_indexer = tag_indexer
         self.word_indexer = word_indexer
@@ -41,7 +43,8 @@ class ProbabilisticSequenceScorer(object):
 
     def score_emission(self, sentence_tokens: List[Token], tag_idx: int, word_posn: int):
         word = sentence_tokens[word_posn].word
-        word_idx = self.word_indexer.index_of(word) if self.word_indexer.contains(word) else self.word_indexer.index_of("UNK")
+        word_idx = self.word_indexer.index_of(word) if self.word_indexer.contains(
+            word) else self.word_indexer.index_of("UNK")
         return self.emission_log_probs[tag_idx, word_idx]
 
 
@@ -56,6 +59,7 @@ class HmmNerModel(object):
         transition_log_probs: [num_tags, num_tags] matrix containing transition log probabilities (prev, curr)
         emission_log_probs: [num_tags, num_words] matrix containing emission log probabilities (tag, word)
     """
+
     def __init__(self, tag_indexer: Indexer, word_indexer: Indexer, init_log_probs, transition_log_probs, emission_log_probs):
         self.tag_indexer = tag_indexer
         self.word_indexer = word_indexer
@@ -70,45 +74,37 @@ class HmmNerModel(object):
         :param sentence_tokens: List of the tokens in the sentence to tag
         :return: The LabeledSentence consisting of predictions over the sentence
         """
-        num_states = len(self.tag_indexer)
-        num_tokens = len(sentence_tokens)
+        def get_word_index(t: Token):
+            if self.word_indexer.contains(t.word):
+                return self.word_indexer.index_of(t.word)
+            return self.word_indexer.index_of("UNK")
+        
+        x = [get_word_index(t) for t in sentence_tokens]
+        N = len(x)
+        S = self.init_log_probs
+        T = self.transition_log_probs.T
+        E = self.emission_log_probs
 
-        scores = np.zeros((num_states, num_tokens))
-        max_path = np.zeros((num_states, num_tokens))
+        scores = np.zeros((T.shape[0], N))
+        max_path = np.zeros((T.shape[0], N), dtype=int)
 
-        # print(sentence_tokens)
-        tok = sentence_tokens[0]
-        # print(self.emission_log_probs[:, self.word_indexer.index_of(tok.word)])
-        # if self.times_ran:
-            # print(self.emission_log_probs[:, self.word_indexer.index_of(sentence_tokens[1].word)])
-        scores[:,0] = self.init_log_probs + self.emission_log_probs[:, self.word_indexer.index_of(tok.word)]
+        scores[:, 0] = S + E[:, x[0]]
 
-        for i in range(1, num_tokens):
-            tok = sentence_tokens[i]
-            log_probs = np.array([scores[:, i - 1]]).T + self.transition_log_probs
-            scores[:, i] = np.max(log_probs, axis=0) + self.emission_log_probs[:, self.word_indexer.index_of(tok.word)]
-            max_path[:, i] = np.argmax(log_probs, axis=0)
-            
-        # print(scores)
-        # print(max_path)
-        # print(self.tag_indexer.get_object(np.argmax(scores)))
+        for i in range(1, N):
+            tmp = scores[:, i - 1] + T
+            scores[:, i] = np.max(tmp, axis=1) + E[:, x[i]]
+            max_path[:, i] = np.argmax(tmp, axis=1)
 
         pred_tags = []
-        max_idx = np.argmax(scores[:, -1])
-        for i in range(len(sentence_tokens) - 1, -1, -1):
-            # print(int(max_idx), end="]-[")
-            pred_tags.insert(0, self.tag_indexer.get_object(max_idx))
-            max_idx = max_path[int(max_idx), i]
-        # print()
-        # print(pred_tags)
-
-        # self.times_ran += 1
-        # if self.times_ran == 3:
-        #     raise Exception("IMPLEMENT ME")
+        k = np.argmax(scores[:, -1])
+        for i in range(N - 1, -1, -1):
+            pred_tags.insert(0, self.tag_indexer.get_object(k))
+            k = max_path[k, i]
 
         return LabeledSentence(sentence_tokens, chunks_from_bio_tag_seq(pred_tags))
 
-def train_hmm_model(sentences: List[LabeledSentence], silent: bool=False) -> HmmNerModel:
+
+def train_hmm_model(sentences: List[LabeledSentence], silent: bool = False) -> HmmNerModel:
     """
     Uses maximum-likelihood estimation to read an HMM off of a corpus of sentences.
     Any word that only appears once in the corpus is replaced with UNK. A small amount
@@ -134,18 +130,22 @@ def train_hmm_model(sentences: List[LabeledSentence], silent: bool=False) -> Hmm
     # Count occurrences of initial tags, transitions, and emissions
     # Apply additive smoothing to avoid log(0) / infinities / etc.
     init_counts = np.ones((len(tag_indexer)), dtype=float) * 0.001
-    transition_counts = np.ones((len(tag_indexer),len(tag_indexer)), dtype=float) * 0.001
-    emission_counts = np.ones((len(tag_indexer),len(word_indexer)), dtype=float) * 0.001
+    transition_counts = np.ones(
+        (len(tag_indexer), len(tag_indexer)), dtype=float) * 0.001
+    emission_counts = np.ones(
+        (len(tag_indexer), len(word_indexer)), dtype=float) * 0.001
     for sentence in sentences:
         bio_tags = sentence.get_bio_tags()
         for i in range(0, len(sentence)):
             tag_idx = tag_indexer.add_and_get_index(bio_tags[i])
-            word_idx = get_word_index(word_indexer, word_counter, sentence.tokens[i].word)
+            word_idx = get_word_index(
+                word_indexer, word_counter, sentence.tokens[i].word)
             emission_counts[tag_idx][word_idx] += 1.0
             if i == 0:
                 init_counts[tag_idx] += 1.0
             else:
-                transition_counts[tag_indexer.add_and_get_index(bio_tags[i-1])][tag_idx] += 1.0
+                transition_counts[tag_indexer.add_and_get_index(
+                    bio_tags[i-1])][tag_idx] += 1.0
     # Turn counts into probabilities for initial tags, transitions, and emissions. All
     # probabilities are stored as log probabilities
     if not silent:
@@ -153,16 +153,20 @@ def train_hmm_model(sentences: List[LabeledSentence], silent: bool=False) -> Hmm
     init_counts = np.log(init_counts / init_counts.sum())
     # transitions are stored as count[prev state][next state], so we sum over the second axis
     # and normalize by that to get the right conditional probabilities
-    transition_counts = np.log(transition_counts / transition_counts.sum(axis=1)[:, np.newaxis])
+    transition_counts = np.log(
+        transition_counts / transition_counts.sum(axis=1)[:, np.newaxis])
     # similar to transitions
-    emission_counts = np.log(emission_counts / emission_counts.sum(axis=1)[:, np.newaxis])
+    emission_counts = np.log(
+        emission_counts / emission_counts.sum(axis=1)[:, np.newaxis])
     if not silent:
         print("Tag indexer: %s" % tag_indexer)
         print("Initial state log probabilities: %s" % init_counts)
         print("Transition log probabilities: %s" % transition_counts)
         print("Emission log probs too big to print...")
-        print("Emission log probs for India: %s" % emission_counts[:,word_indexer.add_and_get_index("India")])
-        print("Emission log probs for Phil: %s" % emission_counts[:,word_indexer.add_and_get_index("Phil")])
+        print("Emission log probs for India: %s" %
+              emission_counts[:, word_indexer.add_and_get_index("India")])
+        print("Emission log probs for Phil: %s" %
+              emission_counts[:, word_indexer.add_and_get_index("Phil")])
         print("   note that these distributions don't normalize because it's p(word|tag) that normalizes, not p(tag|word)")
     return HmmNerModel(tag_indexer, word_indexer, init_counts, transition_counts, emission_counts)
 
@@ -190,6 +194,7 @@ class FeatureBasedSequenceScorer(object):
     Feature-based sequence scoring model. Note that this scorer is instantiated *for every example*: it contains
     the feature cache used for that example.
     """
+
     def __init__(self, tag_indexer, feature_weights, feat_cache):
         self.tag_indexer = tag_indexer
         self.feature_weights = feature_weights
@@ -239,7 +244,7 @@ class CrfNerModel(object):
         raise Exception("IMPLEMENT ME")
 
 
-def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> CrfNerModel:
+def train_crf_model(sentences: List[LabeledSentence], silent: bool = False) -> CrfNerModel:
     """
     Trains a CRF NER model on the given corpus of sentences.
     :param sentences: The training data
@@ -254,16 +259,19 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         print("Extracting features")
     feature_indexer = Indexer()
     # 4-d list indexed by sentence index, word index, tag index, feature index
-    feature_cache = [[[[] for k in range(0, len(tag_indexer))] for j in range(0, len(sentences[i]))] for i in range(0, len(sentences))]
+    feature_cache = [[[[] for k in range(0, len(tag_indexer))] for j in range(
+        0, len(sentences[i]))] for i in range(0, len(sentences))]
     for sentence_idx in range(0, len(sentences)):
         if sentence_idx % 100 == 0 and not silent:
             print("Ex %i/%i" % (sentence_idx, len(sentences)))
         for word_idx in range(0, len(sentences[sentence_idx])):
             for tag_idx in range(0, len(tag_indexer)):
-                feature_cache[sentence_idx][word_idx][tag_idx] = extract_emission_features(sentences[sentence_idx].tokens, word_idx, tag_indexer.get_object(tag_idx), feature_indexer, add_to_indexer=True)
+                feature_cache[sentence_idx][word_idx][tag_idx] = extract_emission_features(
+                    sentences[sentence_idx].tokens, word_idx, tag_indexer.get_object(tag_idx), feature_indexer, add_to_indexer=True)
     if not silent:
         print("Training")
-    weight_vector = UnregularizedAdagradTrainer(np.zeros((len(feature_indexer))), eta=1.0)
+    weight_vector = UnregularizedAdagradTrainer(
+        np.zeros((len(feature_indexer))), eta=1.0)
     num_epochs = 3
     random.seed(0)
     for epoch in range(0, num_epochs):
@@ -276,12 +284,15 @@ def train_crf_model(sentences: List[LabeledSentence], silent: bool=False) -> Crf
         for counter, i in enumerate(sent_indices):
             if counter % 100 == 0 and not silent:
                 print("Ex %i/%i" % (counter, len(sentences)))
-            scorer = FeatureBasedSequenceScorer(tag_indexer, weight_vector, feature_cache[i])
-            (gold_log_prob, gradient) = compute_gradient(sentences[i], tag_indexer, scorer, feature_indexer)
+            scorer = FeatureBasedSequenceScorer(
+                tag_indexer, weight_vector, feature_cache[i])
+            (gold_log_prob, gradient) = compute_gradient(
+                sentences[i], tag_indexer, scorer, feature_indexer)
             total_obj += gold_log_prob
             weight_vector.apply_gradient_update(gradient, 1)
         if not silent:
-            print("Objective for epoch: %.2f in time %.2f" % (total_obj, time.time() - epoch_start))
+            print("Objective for epoch: %.2f in time %.2f" %
+                  (total_obj, time.time() - epoch_start))
     return CrfNerModel(tag_indexer, feature_indexer, weight_vector)
 
 
@@ -313,17 +324,22 @@ def extract_emission_features(sentence_tokens: List[Token], word_index: int, tag
             active_pos = "</S>"
         else:
             active_pos = sentence_tokens[word_index + idx_offset].pos
-        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":Word" + repr(idx_offset) + "=" + active_word)
-        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":Pos" + repr(idx_offset) + "=" + active_pos)
+        maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                          tag + ":Word" + repr(idx_offset) + "=" + active_word)
+        maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                          tag + ":Pos" + repr(idx_offset) + "=" + active_pos)
     # Character n-grams of the current word
     max_ngram_size = 3
     for ngram_size in range(1, max_ngram_size+1):
         start_ngram = curr_word[0:min(ngram_size, len(curr_word))]
-        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":StartNgram=" + start_ngram)
+        maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                          tag + ":StartNgram=" + start_ngram)
         end_ngram = curr_word[max(0, len(curr_word) - ngram_size):]
-        maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":EndNgram=" + end_ngram)
+        maybe_add_feature(feats, feature_indexer,
+                          add_to_indexer, tag + ":EndNgram=" + end_ngram)
     # Look at a few word shape features
-    maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":IsCap=" + repr(curr_word[0].isupper()))
+    maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                      tag + ":IsCap=" + repr(curr_word[0].isupper()))
     # Compute word shape
     new_word = []
     for i in range(0, len(curr_word)):
@@ -335,7 +351,8 @@ def extract_emission_features(sentence_tokens: List[Token], word_index: int, tag
             new_word += "0"
         else:
             new_word += "?"
-    maybe_add_feature(feats, feature_indexer, add_to_indexer, tag + ":WordShape=" + repr(new_word))
+    maybe_add_feature(feats, feature_indexer, add_to_indexer,
+                      tag + ":WordShape=" + repr(new_word))
     return np.asarray(feats, dtype=int)
 
 

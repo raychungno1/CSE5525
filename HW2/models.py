@@ -1,6 +1,5 @@
 # models.py
 
-from msilib.schema import Error
 from optimizers import *
 from nerdata import *
 from utils import *
@@ -8,7 +7,7 @@ from utils import *
 import random
 import time
 
-from collections import Counter
+from collections import Counter, defaultdict
 from typing import List
 
 import numpy as np
@@ -78,7 +77,7 @@ class HmmNerModel(object):
             if self.word_indexer.contains(t.word):
                 return self.word_indexer.index_of(t.word)
             return self.word_indexer.index_of("UNK")
-        
+
         x = [get_word_index(t) for t in sentence_tokens]
         N = len(x)
         S = self.init_log_probs
@@ -233,7 +232,45 @@ class CrfNerModel(object):
         :param sentence_tokens: List of the tokens in the sentence to tag
         :return: The LabeledSentence consisting of predictions over the sentence
         """
-        raise Exception("IMPLEMENT ME")
+
+        feature_cache = [[[] for k in range(
+            len(self.tag_indexer))] for j in range(len(sentence_tokens))]
+        for word_idx in range(0, len(sentence_tokens)):
+            for tag_idx in range(0, len(self.tag_indexer)):
+                feature_cache[word_idx][tag_idx] = extract_emission_features(
+                    sentence_tokens, word_idx, self.tag_indexer.get_object(tag_idx), self.feature_indexer, False)
+
+        scorer = FeatureBasedSequenceScorer(
+            self.tag_indexer, self.feature_weights, feature_cache)
+
+        x = [t.word for t in sentence_tokens]
+        N = len(x)
+        K = len(self.tag_indexer)
+
+        scores = np.zeros((K, N))
+        max_path = np.zeros((K, N), dtype=int)
+        for s in range(K):
+            scores[s, 0] = scorer.score_init(
+                x, s) + scorer.score_emission(x, s, 0)
+
+        for o in range(1, N):
+            for i in range(K):
+                max_path[i, o] = 0
+                scores[i, o] = -np.inf
+                for i_p in range(K):
+                    score = scores[i_p, o - 1] + scorer.score_transition(
+                        x, i_p, i) + scorer.score_emission(x, i, o)
+                    if score > scores[i, o]:
+                        scores[i, o] = score
+                        max_path[i, o] = i_p
+
+        pred_tags = []
+        k = np.argmax(scores[:, -1])
+        for i in range(N - 1, -1, -1):
+            pred_tags.insert(0, self.tag_indexer.get_object(k))
+            k = max_path[k, i]
+
+        return LabeledSentence(sentence_tokens, chunks_from_bio_tag_seq(pred_tags))
 
     def decode_beam(self, sentence_tokens: List[Token]) -> LabeledSentence:
         """
@@ -372,4 +409,55 @@ def compute_gradient(sentence: LabeledSentence, tag_indexer: Indexer, scorer: Fe
     The second value is a Counter containing the gradient -- this is a sparse map from indices (features)
     to weights (gradient values).
     """
-    raise Exception("IMPLEMENT ME")
+
+    x = [t.word for t in sentence.tokens]
+    x_tags = [tag_indexer.index_of(t) for t in sentence.bio_tags]
+    N = len(x)
+    K = len(tag_indexer)
+
+    # Correct Log Probability
+    gold_log_prob = scorer.score_init(
+        x, x_tags[0]) + scorer.score_emission(x, x_tags[0], 0)
+    for i in range(1, N):
+        gold_log_prob += scorer.score_transition(
+            x, x_tags[i - 1], x_tags[i]) + scorer.score_emission(x, x_tags[i], i)
+
+    # Forward Pass
+    a = np.full((K, N), float('-inf'))
+    for s in range(K):
+        a[s, 0] = scorer.score_init(x, s) + scorer.score_emission(x, s, 0)
+
+    for o in range(1, N):
+        for i in range(K):
+            for i_p in range(K):
+                a[i, o] = np.logaddexp(
+                    a[i, o], a[i_p, o - 1] + scorer.score_transition(x, i_p, i) + scorer.score_emission(x, i, o))
+
+    # Backward Pass
+    b = np.full((K, N), float('-inf'))
+    b[:, -1] = 0
+
+    for o in range(N - 2, -1, -1):
+        for i in range(K):
+            for i_n in range(K):
+                b[i, o] = np.logaddexp(
+                    b[i, o], b[i_n, o + 1] + scorer.score_transition(x, i, i_n) + scorer.score_emission(x, i_n, o + 1))
+
+    # Normalization
+    log_prob = a + b
+    for o in range(N):
+        Z = -np.inf
+        for i in range(K):
+            Z = np.logaddexp(Z, log_prob[i, o])
+        log_prob[:, o] -= Z
+
+    # Calculating Gradients
+    gradient = defaultdict(float)
+    for o, gold_lbl in enumerate(x_tags):
+        for f_idx in scorer.feat_cache[o][gold_lbl]:
+            gradient[f_idx] += 1
+        for i in range(K):
+            for f_idx in scorer.feat_cache[o][i]:
+                gradient[f_idx] -= np.exp(log_prob[i][o])
+
+    return gold_log_prob, gradient

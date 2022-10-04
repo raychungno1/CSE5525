@@ -5262,8 +5262,8 @@ YORK NNP I-NP I-ORG
 1996-12-06 CD I-NP O
 
 Standings NNS I-NP O
-of IN I-PP O
-National NNP I-NP B-ORG
+of IN I-PP B-ORG
+National NNP I-NP I-ORG
 Hockey NNP I-NP I-ORG
 
 League NNP I-NP O
@@ -6100,8 +6100,8 @@ YORK NNP I-NP I-ORG
 1996-12-06 CD I-NP O
 
 Standings NNS I-NP O
-of IN I-PP O
-National NNP I-NP B-LOC
+of IN I-PP B-ORG
+National NNP I-NP I-ORG
 
 Basketball NNP I-NP B-ORG
 Association NNP I-NP I-ORG
@@ -7649,9 +7649,9 @@ Konterman NNP I-NP B-PER
 45 CD I-NP O
 , , O O
 
-Van NNP I-NP B-PER
-der FW I-NP I-PER
-Vegt NNP I-NP I-PER
+Van NNP I-NP O
+der FW I-NP B-ORG
+Vegt NNP I-NP I-ORG
 77 CD I-NP O
 ) ) O O
 . . O O
@@ -16501,8 +16501,8 @@ OAKLAND NNP I-NP B-ORG
 N.J. NNP I-NP B-LOC
 1996-12-06 CD I-NP O
 
-Russ NNP I-NP B-ORG
-Berrie NNP I-NP I-ORG
+Russ NNP I-NP O
+Berrie NNP I-NP B-ORG
 and CC O I-ORG
 Co NNP I-NP I-ORG
 Inc NNP I-NP I-ORG
@@ -16682,9 +16682,9 @@ the DT I-NP O
 countryside NN I-NP O
 . . O O
 
-Lieutenant-General NNP I-NP B-ORG
-Maurice NNP I-NP I-ORG
-Baril NNP I-NP I-ORG
+Lieutenant-General NNP I-NP O
+Maurice NNP I-NP B-PER
+Baril NNP I-NP I-PER
 told VBD I-VP O
 a DT I-NP O
 news NN I-NP O
@@ -20337,8 +20337,8 @@ the DT I-NP O
 nation NN I-NP O
 . . O O
 
-Surgeon NNP I-NP B-PER
-Renat NNP I-NP I-PER
+Surgeon NNP I-NP O
+Renat NNP I-NP B-PER
 Akchurin NNP I-NP I-PER
 who WP B-NP O
 led VBD I-VP O
@@ -21880,8 +21880,8 @@ Wheat NN I-NP O
 121 CD I-NP O
 
 Maize NN I-NP O
-( ( O O
-Flint NNP I-NP B-LOC
+( ( O B-LOC
+Flint NNP I-NP I-LOC
 ) ) O O
 113 CD I-NP O
 114 CD I-NP O
@@ -21889,8 +21889,8 @@ Flint NNP I-NP B-LOC
 112 CD I-NP O
 
 Maize NN I-NP O
-( ( O O
-Dent NNP I-NP O
+( ( O B-ORG
+Dent NNP I-NP I-ORG
 ) ) O O
 113 CD I-NP O
 114 CD I-NP O
@@ -30607,8 +30607,8 @@ supply NN I-NP O
 . . O O
 
 Returns NNS I-NP O
-on IN I-PP O
-Treasuries NNPS I-NP B-ORG
+on IN I-PP B-ORG
+Treasuries NNPS I-NP I-ORG
 were VBD I-VP O
 also RB I-ADVP O
 in IN I-PP O
@@ -35727,10 +35727,10 @@ currency NN I-NP O
 . . O O
 
 Member NNP I-NP O
-of IN I-PP O
-Parliament NNP I-NP O
-Tony NNP I-NP B-PER
-Marlow NNP I-NP I-PER
+of IN I-PP B-ORG
+Parliament NNP I-NP I-ORG
+Tony NNP I-NP I-ORG
+Marlow NNP I-NP I-ORG
 said VBD I-VP O
 the DT I-NP O
 resignation NN I-NP O
@@ -38727,8 +38727,8 @@ WTO NNP I-NP B-ORG
 members NNS I-NP O
 . . O O
 
-Derek NNP I-NP B-PER
-da NNP I-NP I-PER
+Derek NNP I-NP O
+da NNP I-NP B-PER
 Cunha NNP I-NP I-PER
 , , O O
 senior JJ I-NP O
@@ -40833,9 +40833,9 @@ Austria NNP I-NP B-LOC
 ) ) O O
 27 CD I-NP O
 
-Nation NNP I-NP B-ORG
-'s POS B-NP O
-Cup NNP I-NP B-MISC
+Nation NNP I-NP O
+'s POS B-NP B-MISC
+Cup NNP I-NP I-MISC
 standings VBZ I-VP O
 : : O O
 
@@ -43777,9 +43777,9 @@ Everton NNP I-NP B-ORG
 , , O O
 Chris NNP I-NP B-PER
 
-Sutton NNP I-NP B-PER
-( ( O O
-Blackburn NNP I-NP B-ORG
+Sutton NNP I-NP O
+( ( O B-ORG
+Blackburn NNP I-NP I-ORG
 ) ) O O
 
 5 CD I-NP O
@@ -47522,8 +47522,8 @@ counter NN I-NP O
 attacks NNS I-NP O
 . . O O
 
-Kim NNP I-NP B-PER
-Do VBP O I-PER
+Kim NNP I-NP O
+Do VBP O B-PER
 Hoon NNP I-NP I-PER
 opened VBD I-VP O
 the DT I-NP O
@@ -47933,8 +47933,8 @@ Bnei NNP I-NP B-ORG
 Yehuda NNP I-NP I-ORG
 0 CD I-NP O
 
-Hapoel NNP I-NP B-ORG
-Tel NNP I-NP I-ORG
+Hapoel NNP I-NP O
+Tel NNP I-NP B-ORG
 Aviv NNP I-NP I-ORG
 1 CD I-NP O
 Betar NNP I-NP B-ORG
@@ -48151,8 +48151,8 @@ She'an NNP I-NP I-ORG
 13 CD I-NP O
 9 CD I-NP O
 
-Hapoel NNP I-NP B-ORG
-Tel NNP I-NP I-ORG
+Hapoel NNP I-NP O
+Tel NNP I-NP B-ORG
 Aviv NNP I-NP I-ORG
 12 CD I-NP O
 2 CD I-NP O
@@ -48353,8 +48353,8 @@ YORK NNP I-NP I-ORG
 1996-12-07 CD I-NP O
 
 Standings NNS I-NP O
-of IN I-PP O
-National NNP I-NP B-LOC
+of IN I-PP B-ORG
+National NNP I-NP I-ORG
 
 Basketball NNP I-NP B-ORG
 Association NNP I-NP I-ORG
@@ -48758,8 +48758,8 @@ YORK NNP I-NP I-ORG
 1996-12-07 CD I-NP O
 
 Standings NNS I-NP O
-of IN I-PP O
-National NNP I-NP B-ORG
+of IN I-PP B-ORG
+National NNP I-NP I-ORG
 Hockey NNP I-NP I-ORG
 
 League NNP I-NP O

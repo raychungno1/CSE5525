@@ -256,7 +256,7 @@ class CrfNerModel(object):
         for o in range(1, N):
             for i in range(K):
                 max_path[i, o] = 0
-                scores[i, o] = -np.inf
+                score = -np.inf
                 for i_p in range(K):
                     score = scores[i_p, o - 1] + scorer.score_transition(
                         x, i_p, i) + scorer.score_emission(x, i, o)
@@ -278,7 +278,49 @@ class CrfNerModel(object):
         :param sentence_tokens: List of the tokens in the sentence to tag
         :return: The LabeledSentence consisting of predictions over the sentence
         """
-        raise Exception("IMPLEMENT ME")
+        feature_cache = [[[] for k in range(
+            len(self.tag_indexer))] for j in range(len(sentence_tokens))]
+        for word_idx in range(0, len(sentence_tokens)):
+            for tag_idx in range(0, len(self.tag_indexer)):
+                feature_cache[word_idx][tag_idx] = extract_emission_features(
+                    sentence_tokens, word_idx, self.tag_indexer.get_object(tag_idx), self.feature_indexer, False)
+
+        scorer = FeatureBasedSequenceScorer(
+            self.tag_indexer, self.feature_weights, feature_cache)
+
+        x = [t.word for t in sentence_tokens]
+        N = len(x)
+        K = len(self.tag_indexer)
+        BEAM_SIZE = 2
+
+        scores = []
+        max_path = np.zeros((K, N), dtype=int)
+        for o in range(N):
+            scores.append(Beam(BEAM_SIZE))
+
+        for s in range(K):
+            scores[0].add(s, scorer.score_init(x, s) +
+                          scorer.score_emission(x, s, 0))
+
+        for o in range(1, N):
+            for i in range(K):
+                max_path[i, o] = 0
+                max_score = -np.inf
+                for i_p, prev_score in scores[o - 1].get_elts_and_scores():
+                    score = prev_score + scorer.score_transition(
+                        x, i_p, i) + scorer.score_emission(x, i, o)
+                    if score > max_score:
+                            max_score = score
+                            max_path[i, o] = i_p
+                scores[o].add(i, max_score)
+                
+        pred_tags = []
+        k = scores[-1].head()
+        for i in range(N - 1, -1, -1):
+            pred_tags.insert(0, self.tag_indexer.get_object(k))
+            k = max_path[k, i]
+
+        return LabeledSentence(sentence_tokens, chunks_from_bio_tag_seq(pred_tags))
 
 
 def train_crf_model(sentences: List[LabeledSentence], silent: bool = False) -> CrfNerModel:

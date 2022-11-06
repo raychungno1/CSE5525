@@ -1,0 +1,49 @@
+main() {
+  Execution directory: /Users/yi-changchung/Desktop/OSU/CSE5525/HW3/state/execs/29.exec
+  DataManager.loadExamples {
+    Reading general {
+      Path: evaluator/domains/dbquery/geoquery/1/geoquery.dlog {
+        Parsing evaluator/domains/dbquery/geoquery/1/geoquery.dlog
+        89 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/../../general/predicates.dlog
+        49 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/geobase.dlog [2.7s, cum. 4.6s]
+        698 statements
+      } [6.2s, cum. 6.2s]
+      Path: evaluator/domains/dbquery/geoquery/1/lexicon.dlog {
+        Parsing evaluator/domains/dbquery/geoquery/1/lexicon.dlog
+        5 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/../../general/lexicon.dlog
+        31 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/lexicon0.dlog
+        5 statements
+      }
+      Path: /var/folders/dc/_4hbd93902l5l_vb4jnppn040000gn/T/tmp6nqbsygl.dlog {
+        Parsing /var/folders/dc/_4hbd93902l5l_vb4jnppn040000gn/T/tmp6nqbsygl.dlog {
+          DatalogParser.loadSafe(): start
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).

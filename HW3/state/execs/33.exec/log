@@ -1,0 +1,1153 @@
+main() {
+  Execution directory: /Users/yi-changchung/Desktop/OSU/CSE5525/HW3/state/execs/33.exec
+  DataManager.loadExamples {
+    Reading general {
+      Path: evaluator/domains/dbquery/geoquery/1/geoquery.dlog {
+        Parsing evaluator/domains/dbquery/geoquery/1/geoquery.dlog [2.3s, cum. 2.3s]
+        89 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/../../general/predicates.dlog
+        49 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/geobase.dlog [4.4s, cum. 7.6s]
+        698 statements
+      } [10s, cum. 10s]
+      Path: evaluator/domains/dbquery/geoquery/1/lexicon.dlog {
+        Parsing evaluator/domains/dbquery/geoquery/1/lexicon.dlog
+        5 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/../../general/lexicon.dlog
+        31 statements
+        Parsing evaluator/domains/dbquery/geoquery/1/lexicon0.dlog
+        5 statements
+      }
+      Path: /var/folders/dc/_4hbd93902l5l_vb4jnppn040000gn/T/tmpptxfx5vc.dlog {
+        Parsing /var/folders/dc/_4hbd93902l5l_vb4jnppn040000gn/T/tmpptxfx5vc.dlog {
+          DatalogParser.loadSafe(): start
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,countryid(usa))))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(river(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B)),traverse(B,A)))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),const(C,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B)))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))).
+          _parse([query], answer(A,largest(A,(state(A),next_to(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,count(B,(river(B),traverse(B,C),state(C),next_to(C,D),const(D,stateid(texas))),B))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B)))).
+          _parse([query], answer(A,count(B,(river(B),loc(B,C),state(C),next_to(C,D),state(D),next_to(D,E),state(E))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,state(A))).
+          _parse([query], answer(A,(len(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B)))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,largest(A,(river(A),traverse(A,@))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C),next_to(C,D),state(D)))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,place(B))))).
+          _parse([query], answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))).
+          _parse([query], answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(river(B),traverse(B,A)),state(B)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(city(A),population(A,B))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(len(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,countryid(usa))))))).
+          _parse([query], answer(A,(river(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,count(B,(river(B),loc(B,C),state(C),next_to(C,D),state(D))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(state(A),loc(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,largest(B,(population(A,B),state(A),loc(A,C),const(C,stateid(texas)))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),const(B,cityid(austin,_)),capital(B),loc(B,A)))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(capital(A),loc(A,B),state(B),loc(C,B),highest(C,place(C))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))).
+          _parse([query], answer(A,largest(A,(river(A),loc(A,B),state(B))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(state(A),const(B,cityid(austin,_)),capital(B),loc(B,A)))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(state(A),loc(B,A),capital(B),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B))))).
+          _parse([query], answer(A,longest(A,(river(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C),next_to(C,D),state(D)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(river(B),traverse(B,A)),state(B)))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(river(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(A,state(A)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),state(C),next_to(C,D),const(D,stateid(texas))),B))).
+          _parse([query], answer(A,count(B,(river(B),traverse(B,C),state(C),next_to(C,D),state(D)),B))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(river(A),traverse(A,B),state(B),loc(C,B),highest(C,(place(C),loc(C,D),const(D,stateid(texas))))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          _parse([query], answer(A,count(B,(river(B),traverse(B,A))))).
+          _parse([query], answer(A,(population(B,A),state(B),const(C,riverid(mississippi)),river(C)),traverse(C,B)))).
+          _parse([query], answer(A,largest(A,(river(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),state(B),const(C,riverid(mississippi)),river(C),traverse(C,B)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B)))).
+          _parse([query], answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,(capital(A),loc(A,B),state(B),next_to(B,C),state(C)))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,largest(B,(population(A,B),state(A),population(A,B)))))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))).
+          _parse([query], answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))).
+          _parse([query], answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,count(B,(state(B),next_to(B,C),state(C)),A))).
+          _parse([query], answer(A,largest(B,(state(A),population(A,B))))).
+          _parse([query], answer(A,(population(B,A),const(B,cityid(austin,_))))).
+          _parse([query], answer(A,(loc(B,A),const(B,cityid("san",_))))).
+          _parse([query], answer(A,(population(B,A),state(B)))).
+          _parse([query], answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))).
+          DatalogParser.loadSafe(): end
+        } [4.8s, cum. 4.8s]
+        560 statements
+        Example tmpptxfx5vc.dlog:0: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:1: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:2: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:3: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:4: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:5: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:6: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:7: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:8: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:9: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:10: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:11: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:12: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:13: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:14: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:15: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:16: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:17: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:18: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:19: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:20: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:21: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:22: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:23: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:24: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:25: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:26: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:27: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:28: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:29: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:30: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:31: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:32: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:33: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:34: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:35: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:36: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:37: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:38: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:39: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:40: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:41: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:42: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:43: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:44: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:45: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:46: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:47: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:48: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:49: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:50: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:51: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:52: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:53: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:54: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:55: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:56: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:57: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:58: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:59: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:60: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:61: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:62: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:63: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:64: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:65: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:66: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:67: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:68: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:69: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:70: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:71: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:72: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:73: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:74: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:75: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:76: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:77: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:78: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:79: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:80: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:81: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:82: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:83: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:84: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:85: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:86: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:87: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:88: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:89: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:90: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:91: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:92: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:93: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:94: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:95: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:96: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:97: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:98: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:99: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:100: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:101: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:102: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:103: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:104: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:105: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:106: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:107: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:108: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:109: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:110: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:111: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:112: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:113: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:114: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:115: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:116: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:117: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:118: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:119: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:120: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:121: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:122: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:123: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:124: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:125: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:126: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:127: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:128: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:129: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:130: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:131: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:132: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:133: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:134: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:135: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:136: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:137: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:138: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:139: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:140: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:141: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:142: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:143: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:144: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:145: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:146: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:147: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:148: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:149: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:150: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:151: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:152: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:153: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:154: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:155: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:156: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:157: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:158: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:159: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:160: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:161: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:162: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:163: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:164: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:165: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:166: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:167: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:168: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:169: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:170: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:171: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:172: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:173: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:174: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:175: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:176: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:177: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:178: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:179: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:180: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:181: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:182: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:183: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:184: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:185: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:186: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:187: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:188: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:189: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:190: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:191: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:192: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:193: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:194: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:195: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:196: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:197: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:198: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:199: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:200: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:201: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:202: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:203: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:204: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:205: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:206: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:207: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:208: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:209: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:210: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:211: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:212: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:213: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:214: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:215: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:216: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:217: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:218: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:219: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:220: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:221: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:222: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:223: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:224: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:225: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:226: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:227: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:228: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:229: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:230: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:231: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:232: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:233: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:234: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:235: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:236: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:237: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:238: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:239: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:240: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:241: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:242: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:243: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:244: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:245: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:246: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:247: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:248: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:249: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:250: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:251: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:252: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:253: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:254: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:255: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:256: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:257: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:258: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:259: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:260: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:261: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:262: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:263: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:264: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:265: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:266: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:267: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:268: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:269: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:270: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:271: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:272: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:273: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:274: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:275: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:276: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:277: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:278: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:279: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:280: query => {[alaska:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,countryid(usa))))))
+        Example tmpptxfx5vc.dlog:281: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:282: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:283: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:284: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:285: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:286: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:287: query => {[new york_ny:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))
+        Example tmpptxfx5vc.dlog:288: query => {[oxnard_ca:cityid/3],[bristol township_pa:cityid/3],[santa barbara_ca:cityid/3],[buena park_ca:cityid/3],[fayetteville_nc:cityid/3],[orlando_fl:cityid/3],[san angelo_tx:cityid/3],[downey_ca:cityid/3],[greenville_sc:cityid/3],[concord_ca:cityid/3],[richardson_tx:cityid/3],[columbia_sc:cityid/3],[waukegan_il:cityid/3],[orange_ca:cityid/3],[pomona_ca:cityid/3],[lowell_ma:cityid/3],[charleston_sc:cityid/3],[largo_fl:cityid/3],[clearwater_fl:cityid/3],[bayonne_nj:cityid/3],[manchester_nh:cityid/3],[amarillo_tx:cityid/3],[vallejo_ca:cityid/3],[grand prairie_tx:cityid/3],[san bernardino_ca:cityid/3],[lakewood_oh:cityid/3],[bethesda_md:cityid/3],[evanston_il:cityid/3],[medford_ma:cityid/3],[san leandro_ca:cityid/3],[lakewood_co:cityid/3],[pueblo_co:cityid/3],[great falls_mt:cityid/3],[boise_id:cityid/3],[modesto_ca:cityid/3],[richmond_ca:cityid/3],[north charleston_sc:cityid/3],[westminster_ca:cityid/3],[mountain view_ca:cityid/3],[bellevue_wa:cityid/3],[reno_nv:cityid/3],[warwick_ri:cityid/3],[schenectady_ny:cityid/3],[sterling heights_mi:cityid/3],[peoria_il:cityid/3],[santa clara_ca:cityid/3],[bethlehem_pa:cityid/3],[utica_ny:cityid/3],[salem_or:cityid/3],[columbia_mo:cityid/3],[alexandria_va:cityid/3],[springfield_mo:cityid/3],[raleigh_nc:cityid/3],[winston-salem_nc:cityid/3],[portsmouth_va:cityid/3],[livonia_mi:cityid/3],[lawton_ok:cityid/3],[fargo_nd:cityid/3],[citrus heights_ca:cityid/3],[waterford_mi:cityid/3],[independence_mo:cityid/3],[silver spring_md:cityid/3],[waco_tx:cityid/3],[carson_ca:cityid/3],[bristol_ct:cityid/3],[glendale_ca:cityid/3],[wyoming_mi:cityid/3],[rochester_mn:cityid/3],[beaumont_tx:cityid/3],[oceanside_ca:cityid/3],[oak lawn_il:cityid/3],[east orange_nj:cityid/3],[scranton_pa:cityid/3],[westland_mi:cityid/3],[south gate_ca:cityid/3],[bloomington_mn:cityid/3],[royal oak_mi:cityid/3],[terre haute_in:cityid/3],[ogden_ut:cityid/3],[longview_tx:cityid/3],[anderson_in:cityid/3],[springfield_oh:cityid/3],[waterloo_ia:cityid/3],[troy_mi:cityid/3],[rockford_il:cityid/3],[somerville_ma:cityid/3],[lynn_ma:cityid/3],[quincy_ma:cityid/3],[cicero_il:cityid/3],[stockton_ca:cityid/3],[scotts valley_ca:cityid/3],[garden grove_ca:cityid/3],[east los angeles_ca:cityid/3],[huntington_wv:cityid/3],[norwalk_ct:cityid/3],[bridgeport_ct:cityid/3],[ontario_ca:cityid/3],[alhambra_ca:cityid/3],[lorain_oh:cityid/3],[penn hills_pa:cityid/3],[macon_ga:cityid/3],[costa mesa_ca:cityid/3],[irvine_ca:cityid/3],[billings_mt:cityid/3],[dearborn heights_mi:cityid/3],[wilmington_de:cityid/3],[hayward_ca:cityid/3],[irving_tx:cityid/3],[scottsdale_az:cityid/3],[cedar rapids_ia:cityid/3],[santa monica_ca:cityid/3],[kettering_oh:cityid/3],[santa rosa_ca:cityid/3],[gainesville_fl:cityid/3],[kendall_fl:cityid/3],[el cajon_ca:cityid/3],[west covina_ca:cityid/3],[arvada_co:cityid/3],[brownsville_tx:cityid/3],[sioux falls_sd:cityid/3],[kalamazoo_mi:cityid/3],[south bend_in:cityid/3],[clifton_nj:cityid/3],[chula vista_ca:cityid/3],[euclid_oh:cityid/3],[redondo beach_ca:cityid/3],[hartford_ct:cityid/3],[mesquite_tx:cityid/3],[clinton_mi:cityid/3],[burbank_ca:cityid/3],[farmington hills_mi:cityid/3],[middletown_nj:cityid/3],[pasadena_tx:cityid/3],[racine_wi:cityid/3],[youngstown_oh:cityid/3],[huntsville_al:cityid/3],[cheektowaga_ny:cityid/3],[framingham_ma:cityid/3],[monroe_la:cityid/3],[tallahassee_fl:cityid/3],[champaign_il:cityid/3],[tuscaloosa_al:cityid/3],[boulder_co:cityid/3],[berkeley_ca:cityid/3],[inglewood_ca:cityid/3],[woodbridge_nj:cityid/3],[reading_pa:cityid/3],[newport news_va:cityid/3],[wichita falls_tx:cityid/3],[fort smith_ar:cityid/3],[danbury_ct:cityid/3],[mount vernon_ny:cityid/3],[fort collins_co:cityid/3],[ann arbor_mi:cityid/3],[waltham_ma:cityid/3],[nashua_nh:cityid/3],[alameda_ca:cityid/3],[stamford_ct:cityid/3],[arlington heights_il:cityid/3],[san mateo_ca:cityid/3],[el monte_ca:cityid/3],[laredo_tx:cityid/3],[high point_nc:cityid/3],[dubuque_ia:cityid/3],[sunnyvale_ca:cityid/3],[charleston_wv:cityid/3],[fairfield_ca:cityid/3],[newport beach_ca:cityid/3],[dundalk_md:cityid/3],[meriden_ct:cityid/3],[west allis_wi:cityid/3],[lynchburg_va:cityid/3],[west hartford_ct:cityid/3],[southfield_mi:cityid/3],[paterson_nj:cityid/3],[altoona_pa:cityid/3],[lansing_mi:cityid/3],[hollywood_fl:cityid/3],[st. clair shores_mi:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[ventura_ca:cityid/3],[new bedford_ma:cityid/3],[tempe_az:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[pensacola_fl:cityid/3],[duluth_mn:cityid/3],[greenwich_ct:cityid/3],[skokie_il:cityid/3],[elyria_oh:cityid/3],[sioux city_ia:cityid/3],[bakersfield_ca:cityid/3],[niagara falls_ny:cityid/3],[thousand oaks_ca:cityid/3],[cranston_ri:cityid/3],[evansville_in:cityid/3],[trenton_nj:cityid/3],[redford_mi:cityid/3],[kenosha_wi:cityid/3],[durham_nc:cityid/3],[fremont_ca:cityid/3],[camden_nj:cityid/3],[miami beach_fl:cityid/3],[odessa_tx:cityid/3],[appleton_wi:cityid/3],[muncie_in:cityid/3],[overland park_ks:cityid/3],[green bay_wi:cityid/3],[topeka_ks:cityid/3],[edison_nj:cityid/3],[waterbury_ct:cityid/3],[hampton_va:cityid/3],[west valley_ut:cityid/3],[st. joseph_mo:cityid/3],[savannah_ga:cityid/3],[torrance_ca:cityid/3],[lakewood_ca:cityid/3],[casper_wy:cityid/3],[hammond_in:cityid/3],[irvington_nj:cityid/3],[abingdon_pa:cityid/3],[eugene_or:cityid/3],[joliet_il:cityid/3],[simi valley_ca:cityid/3],[west palm beach_fl:cityid/3],[dearborn_mi:cityid/3],[cherry hill_nj:cityid/3],[new haven_ct:cityid/3],[lawrence_ma:cityid/3],[chesapeake_va:cityid/3],[springfield_il:cityid/3],[erie_pa:cityid/3],[compton_ca:cityid/3],[levittown_ny:cityid/3],[aurora_il:cityid/3],[albany_ny:cityid/3],[elizabeth_nj:cityid/3],[pontiac_mi:cityid/3],[whittier_ca:cityid/3],[decatur_il:cityid/3],[pawtucket_ri:cityid/3],[north little rock_ar:cityid/3],[lake charles_la:cityid/3],[fullerton_ca:cityid/3],[davenport_ia:cityid/3],[fall river_ma:cityid/3],[brockton_ma:cityid/3],[midland_tx:cityid/3],[new rochelle_ny:cityid/3],[lafayette_la:cityid/3],[parma_oh:cityid/3],[allentown_pa:cityid/3],[provo_ut:cityid/3],[upper darby_pa:cityid/3],[daly city_ca:cityid/3],[salinas_ca:cityid/3],[norwalk_ca:cityid/3],[roanoke_va:cityid/3],[pasadena_ca:cityid/3],[port arthur_tx:cityid/3],[newton_ma:cityid/3],[glendale_az:cityid/3],[tyler_tx:cityid/3],[new britain_ct:cityid/3],[escondido_ca:cityid/3],[elgin_il:cityid/3],[cambridge_ma:cityid/3],[lower merion_pa:cityid/3],[irondequoit_ny:cityid/3],[norman_ok:cityid/3],[portland_me:cityid/3],[taylor_mi:cityid/3],[albany_ga:cityid/3],[hamilton_oh:cityid/3],[saginaw_mi:cityid/3],[kenner_la:cityid/3],[canton_oh:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:289: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:290: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:291: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:292: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:293: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:294: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:295: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:296: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:297: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:298: query => {[21count]} | answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:299: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))
+        Example FAILED TO PARSE
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:300: query => {[new orleans_la:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),const(C,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:301: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:302: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:303: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:304: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:305: query => {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]} | answer(A,(state(A),next_to(A,B),state(B)))
+        Example tmpptxfx5vc.dlog:306: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:307: query => {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]} | answer(A,(state(A),next_to(A,B),state(B)))
+        Example tmpptxfx5vc.dlog:308: query => {[new york_ny:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))
+        Example tmpptxfx5vc.dlog:309: query => {[new mexico:stateid/2]} | answer(A,largest(A,(state(A),next_to(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:310: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:311: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:313: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:314: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:315: query => {[dakota:riverid/2],[wabash:riverid/2],[gila:riverid/2],[connecticut:riverid/2],[clark fork:riverid/2],[allegheny:riverid/2],[south platte:riverid/2],[washita:riverid/2],[hudson:riverid/2],[snake:riverid/2],[tombigbee:riverid/2],[chattahoochee:riverid/2],[pecos:riverid/2],[ohio:riverid/2],[arkansas:riverid/2],[roanoke:riverid/2],[colorado:riverid/2],[little missouri:riverid/2],[delaware:riverid/2],[wateree catawba:riverid/2],[cimarron:riverid/2],[white:riverid/2],[powder:riverid/2],[cumberland:riverid/2],[bighorn:riverid/2],[niobrara:riverid/2],[rock:riverid/2],[columbia:riverid/2],[tennessee:riverid/2],[smoky hill:riverid/2],[rio grande:riverid/2],[mississippi:riverid/2],[pearl:riverid/2],[potomac:riverid/2],[canadian:riverid/2],[republican:riverid/2],[red:riverid/2],[neosho:riverid/2],[north platte:riverid/2],[ouachita:riverid/2],[yellowstone:riverid/2],[cheyenne:riverid/2],[green:riverid/2],[san juan:riverid/2],[missouri:riverid/2],[st. francis:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B)))
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:317: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:318: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:319: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:320: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:321: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:322: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:323: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:324: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:325: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:326: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:327: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:328: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:329: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:330: query => {[oxnard_ca:cityid/3],[bristol township_pa:cityid/3],[santa barbara_ca:cityid/3],[buena park_ca:cityid/3],[fayetteville_nc:cityid/3],[orlando_fl:cityid/3],[san angelo_tx:cityid/3],[downey_ca:cityid/3],[greenville_sc:cityid/3],[concord_ca:cityid/3],[richardson_tx:cityid/3],[columbia_sc:cityid/3],[waukegan_il:cityid/3],[orange_ca:cityid/3],[pomona_ca:cityid/3],[lowell_ma:cityid/3],[charleston_sc:cityid/3],[largo_fl:cityid/3],[clearwater_fl:cityid/3],[bayonne_nj:cityid/3],[manchester_nh:cityid/3],[amarillo_tx:cityid/3],[vallejo_ca:cityid/3],[grand prairie_tx:cityid/3],[san bernardino_ca:cityid/3],[lakewood_oh:cityid/3],[bethesda_md:cityid/3],[evanston_il:cityid/3],[medford_ma:cityid/3],[san leandro_ca:cityid/3],[lakewood_co:cityid/3],[pueblo_co:cityid/3],[great falls_mt:cityid/3],[boise_id:cityid/3],[modesto_ca:cityid/3],[richmond_ca:cityid/3],[north charleston_sc:cityid/3],[westminster_ca:cityid/3],[mountain view_ca:cityid/3],[bellevue_wa:cityid/3],[reno_nv:cityid/3],[warwick_ri:cityid/3],[schenectady_ny:cityid/3],[sterling heights_mi:cityid/3],[peoria_il:cityid/3],[santa clara_ca:cityid/3],[bethlehem_pa:cityid/3],[utica_ny:cityid/3],[salem_or:cityid/3],[columbia_mo:cityid/3],[alexandria_va:cityid/3],[springfield_mo:cityid/3],[raleigh_nc:cityid/3],[winston-salem_nc:cityid/3],[portsmouth_va:cityid/3],[livonia_mi:cityid/3],[lawton_ok:cityid/3],[fargo_nd:cityid/3],[citrus heights_ca:cityid/3],[waterford_mi:cityid/3],[independence_mo:cityid/3],[silver spring_md:cityid/3],[waco_tx:cityid/3],[carson_ca:cityid/3],[bristol_ct:cityid/3],[glendale_ca:cityid/3],[wyoming_mi:cityid/3],[rochester_mn:cityid/3],[beaumont_tx:cityid/3],[oceanside_ca:cityid/3],[oak lawn_il:cityid/3],[east orange_nj:cityid/3],[scranton_pa:cityid/3],[westland_mi:cityid/3],[south gate_ca:cityid/3],[bloomington_mn:cityid/3],[royal oak_mi:cityid/3],[terre haute_in:cityid/3],[ogden_ut:cityid/3],[longview_tx:cityid/3],[anderson_in:cityid/3],[springfield_oh:cityid/3],[waterloo_ia:cityid/3],[troy_mi:cityid/3],[rockford_il:cityid/3],[somerville_ma:cityid/3],[lynn_ma:cityid/3],[quincy_ma:cityid/3],[cicero_il:cityid/3],[stockton_ca:cityid/3],[scotts valley_ca:cityid/3],[garden grove_ca:cityid/3],[east los angeles_ca:cityid/3],[huntington_wv:cityid/3],[norwalk_ct:cityid/3],[bridgeport_ct:cityid/3],[ontario_ca:cityid/3],[alhambra_ca:cityid/3],[lorain_oh:cityid/3],[penn hills_pa:cityid/3],[macon_ga:cityid/3],[costa mesa_ca:cityid/3],[irvine_ca:cityid/3],[billings_mt:cityid/3],[dearborn heights_mi:cityid/3],[wilmington_de:cityid/3],[hayward_ca:cityid/3],[irving_tx:cityid/3],[scottsdale_az:cityid/3],[cedar rapids_ia:cityid/3],[santa monica_ca:cityid/3],[kettering_oh:cityid/3],[santa rosa_ca:cityid/3],[gainesville_fl:cityid/3],[kendall_fl:cityid/3],[el cajon_ca:cityid/3],[west covina_ca:cityid/3],[arvada_co:cityid/3],[brownsville_tx:cityid/3],[sioux falls_sd:cityid/3],[kalamazoo_mi:cityid/3],[south bend_in:cityid/3],[clifton_nj:cityid/3],[chula vista_ca:cityid/3],[euclid_oh:cityid/3],[redondo beach_ca:cityid/3],[hartford_ct:cityid/3],[mesquite_tx:cityid/3],[clinton_mi:cityid/3],[burbank_ca:cityid/3],[farmington hills_mi:cityid/3],[middletown_nj:cityid/3],[pasadena_tx:cityid/3],[racine_wi:cityid/3],[youngstown_oh:cityid/3],[huntsville_al:cityid/3],[cheektowaga_ny:cityid/3],[framingham_ma:cityid/3],[monroe_la:cityid/3],[tallahassee_fl:cityid/3],[champaign_il:cityid/3],[tuscaloosa_al:cityid/3],[boulder_co:cityid/3],[berkeley_ca:cityid/3],[inglewood_ca:cityid/3],[woodbridge_nj:cityid/3],[reading_pa:cityid/3],[newport news_va:cityid/3],[wichita falls_tx:cityid/3],[fort smith_ar:cityid/3],[danbury_ct:cityid/3],[mount vernon_ny:cityid/3],[fort collins_co:cityid/3],[ann arbor_mi:cityid/3],[waltham_ma:cityid/3],[nashua_nh:cityid/3],[alameda_ca:cityid/3],[stamford_ct:cityid/3],[arlington heights_il:cityid/3],[san mateo_ca:cityid/3],[el monte_ca:cityid/3],[laredo_tx:cityid/3],[high point_nc:cityid/3],[dubuque_ia:cityid/3],[sunnyvale_ca:cityid/3],[charleston_wv:cityid/3],[fairfield_ca:cityid/3],[newport beach_ca:cityid/3],[dundalk_md:cityid/3],[meriden_ct:cityid/3],[west allis_wi:cityid/3],[lynchburg_va:cityid/3],[west hartford_ct:cityid/3],[southfield_mi:cityid/3],[paterson_nj:cityid/3],[altoona_pa:cityid/3],[lansing_mi:cityid/3],[hollywood_fl:cityid/3],[st. clair shores_mi:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[ventura_ca:cityid/3],[new bedford_ma:cityid/3],[tempe_az:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[pensacola_fl:cityid/3],[duluth_mn:cityid/3],[greenwich_ct:cityid/3],[skokie_il:cityid/3],[elyria_oh:cityid/3],[sioux city_ia:cityid/3],[bakersfield_ca:cityid/3],[niagara falls_ny:cityid/3],[thousand oaks_ca:cityid/3],[cranston_ri:cityid/3],[evansville_in:cityid/3],[trenton_nj:cityid/3],[redford_mi:cityid/3],[kenosha_wi:cityid/3],[durham_nc:cityid/3],[fremont_ca:cityid/3],[camden_nj:cityid/3],[miami beach_fl:cityid/3],[odessa_tx:cityid/3],[appleton_wi:cityid/3],[muncie_in:cityid/3],[overland park_ks:cityid/3],[green bay_wi:cityid/3],[topeka_ks:cityid/3],[edison_nj:cityid/3],[waterbury_ct:cityid/3],[hampton_va:cityid/3],[west valley_ut:cityid/3],[st. joseph_mo:cityid/3],[savannah_ga:cityid/3],[torrance_ca:cityid/3],[lakewood_ca:cityid/3],[casper_wy:cityid/3],[hammond_in:cityid/3],[irvington_nj:cityid/3],[abingdon_pa:cityid/3],[eugene_or:cityid/3],[joliet_il:cityid/3],[simi valley_ca:cityid/3],[west palm beach_fl:cityid/3],[dearborn_mi:cityid/3],[cherry hill_nj:cityid/3],[new haven_ct:cityid/3],[lawrence_ma:cityid/3],[chesapeake_va:cityid/3],[springfield_il:cityid/3],[erie_pa:cityid/3],[compton_ca:cityid/3],[levittown_ny:cityid/3],[aurora_il:cityid/3],[albany_ny:cityid/3],[elizabeth_nj:cityid/3],[pontiac_mi:cityid/3],[whittier_ca:cityid/3],[decatur_il:cityid/3],[pawtucket_ri:cityid/3],[north little rock_ar:cityid/3],[lake charles_la:cityid/3],[fullerton_ca:cityid/3],[davenport_ia:cityid/3],[fall river_ma:cityid/3],[brockton_ma:cityid/3],[midland_tx:cityid/3],[new rochelle_ny:cityid/3],[lafayette_la:cityid/3],[parma_oh:cityid/3],[allentown_pa:cityid/3],[provo_ut:cityid/3],[upper darby_pa:cityid/3],[daly city_ca:cityid/3],[salinas_ca:cityid/3],[norwalk_ca:cityid/3],[roanoke_va:cityid/3],[pasadena_ca:cityid/3],[port arthur_tx:cityid/3],[newton_ma:cityid/3],[glendale_az:cityid/3],[tyler_tx:cityid/3],[new britain_ct:cityid/3],[escondido_ca:cityid/3],[elgin_il:cityid/3],[cambridge_ma:cityid/3],[lower merion_pa:cityid/3],[irondequoit_ny:cityid/3],[norman_ok:cityid/3],[portland_me:cityid/3],[taylor_mi:cityid/3],[albany_ga:cityid/3],[hamilton_oh:cityid/3],[saginaw_mi:cityid/3],[kenner_la:cityid/3],[canton_oh:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:331: query => {} | answer(A,(population(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:332: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:333: query => {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[alaska:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[hawaii:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]} | answer(A,state(A))
+        Example tmpptxfx5vc.dlog:334: query => {[Join failed syntactically: {[1638000length,red:riverid/2],[1670000length,snake:riverid/2],[1458000length,canadian:riverid/2],[483000length,clark fork:riverid/2],[655000length,connecticut:riverid/2],[869000length,smoky hill:riverid/2],[459000length,rock:riverid/2],[1105000length,cumberland:riverid/2],[1953000length,columbia:riverid/2],[693000length,niobrara:riverid/2],[658000length,tombigbee:riverid/2],[579000length,san juan:riverid/2],[541000length,bighorn:riverid/2],[1094000length,north platte:riverid/2],[636000length,wateree catawba:riverid/2],[660000length,roanoke:riverid/2],[2333000length,colorado:riverid/2],[492000length,hudson:riverid/2],[805000length,gila:riverid/2],[1110000length,white:riverid/2],[1080000length,yellowstone:riverid/2],[3778000length,mississippi:riverid/2],[848000length,cheyenne:riverid/2],[1049000length,tennessee:riverid/2],[1175000length,green:riverid/2],[3033000length,rio grande:riverid/2],[764000length,wabash:riverid/2],[451000length,delaware:riverid/2],[740000length,neosho:riverid/2],[1142000length,dakota:riverid/2],[603000length,powder:riverid/2],[973000length,ouachita:riverid/2],[805000length,washita:riverid/2],[1569000length,ohio:riverid/2],[901000length,little missouri:riverid/2],[684000length,st. francis:riverid/2],[965000length,cimarron:riverid/2],[682000length,south platte:riverid/2],[702000length,chattahoochee:riverid/2],[3968000length,missouri:riverid/2],[2333000length,arkansas:riverid/2],[462000length,potomac:riverid/2],[788000length,pearl:riverid/2],[679000length,republican:riverid/2],[523000length,allegheny:riverid/2],[805000length,pecos:riverid/2]}:{[length,riverid/2]}[1] and {..}:{[date,date,cityid/3],[money,money,cityid/3],[length,length,cityid/3],[count/length^2,count/length^2,cityid/3],[money/time_duration,money/time_duration,cityid/3],[date_month,date_month,cityid/3],[time_duration,time_duration,cityid/3],[frac,frac,cityid/3],[name,name,cityid/3],[rank,rank,cityid/3],[date_year,date_year,cityid/3],[date_day,date_day,cityid/3],[date_time,date_time,cityid/3],[count,count,cityid/3],[length^2,length^2,cityid/3]}[2] => {}:error]} | answer(A,(len(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:335: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:336: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:337: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:338: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:339: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:340: query => {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]} | answer(A,(state(A),next_to(A,B),state(B)))
+        Example tmpptxfx5vc.dlog:341: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:342: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:343: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:344: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:345: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:346: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:347: query => {[Cost 271904.0 exceeds maximum of 100000:error]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C),next_to(C,D),state(D)))
+        Example tmpptxfx5vc.dlog:348: query => {[alaska:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,place(B))))
+        Example tmpptxfx5vc.dlog:349: query => {[texas:stateid/2]} | answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))
+        Example tmpptxfx5vc.dlog:350: query => {[austin_tx:cityid/3]} | answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:351: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:353: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:354: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:355: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:356: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:357: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:358: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:359: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:360: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:361: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:362: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:363: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:364: query => {[austin_tx:cityid/3]} | answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:365: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:366: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:367: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:368: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:369: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:370: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:371: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:372: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:373: query => {[new york_ny:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))
+        Example tmpptxfx5vc.dlog:374: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:375: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:376: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:377: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:378: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:379: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:380: query => {[new york_ny:cityid/3]} | answer(A,largest(B,(city(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:381: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:382: query => {[Join failed syntactically: {[guadalupe peak:placeid/2]}:{[placeid/2]}[0] and {[colorado:riverid/2,2333000length],[wateree catawba:riverid/2,636000length],[san juan:riverid/2,579000length],[st. francis:riverid/2,684000length],[hudson:riverid/2,492000length],[gila:riverid/2,805000length],[powder:riverid/2,603000length],[neosho:riverid/2,740000length],[north platte:riverid/2,1094000length],[cimarron:riverid/2,965000length],[potomac:riverid/2,462000length],[ouachita:riverid/2,973000length],[tennessee:riverid/2,1049000length],[mississippi:riverid/2,3778000length],[canadian:riverid/2,1458000length],[arkansas:riverid/2,2333000length],[roanoke:riverid/2,660000length],[cumberland:riverid/2,1105000length],[green:riverid/2,1175000length],[republican:riverid/2,679000length],[little missouri:riverid/2,901000length],[wabash:riverid/2,764000length],[rio grande:riverid/2,3033000length],[yellowstone:riverid/2,1080000length],[tombigbee:riverid/2,658000length],[snake:riverid/2,1670000length],[washita:riverid/2,805000length],[rock:riverid/2,459000length],[delaware:riverid/2,451000length],[connecticut:riverid/2,655000length],[missouri:riverid/2,3968000length],[bighorn:riverid/2,541000length],[dakota:riverid/2,1142000length],[pecos:riverid/2,805000length],[cheyenne:riverid/2,848000length],[niobrara:riverid/2,693000length],[chattahoochee:riverid/2,702000length],[pearl:riverid/2,788000length],[clark fork:riverid/2,483000length],[red:riverid/2,1638000length],[white:riverid/2,1110000length],[columbia:riverid/2,1953000length],[ohio:riverid/2,1569000length],[allegheny:riverid/2,523000length],[south platte:riverid/2,682000length],[smoky hill:riverid/2,869000length]}:{[riverid/2,length]}[0] => {}:error]} | answer(A,(len(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:383: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:384: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:385: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:386: query => {[alaska:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,countryid(usa))))))
+        Example tmpptxfx5vc.dlog:387: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:388: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:389: query => {[dakota:riverid/2],[wabash:riverid/2],[gila:riverid/2],[connecticut:riverid/2],[clark fork:riverid/2],[allegheny:riverid/2],[south platte:riverid/2],[washita:riverid/2],[hudson:riverid/2],[snake:riverid/2],[tombigbee:riverid/2],[chattahoochee:riverid/2],[pecos:riverid/2],[ohio:riverid/2],[arkansas:riverid/2],[roanoke:riverid/2],[colorado:riverid/2],[little missouri:riverid/2],[delaware:riverid/2],[wateree catawba:riverid/2],[cimarron:riverid/2],[white:riverid/2],[powder:riverid/2],[cumberland:riverid/2],[bighorn:riverid/2],[niobrara:riverid/2],[rock:riverid/2],[columbia:riverid/2],[tennessee:riverid/2],[smoky hill:riverid/2],[rio grande:riverid/2],[mississippi:riverid/2],[pearl:riverid/2],[potomac:riverid/2],[canadian:riverid/2],[republican:riverid/2],[red:riverid/2],[neosho:riverid/2],[north platte:riverid/2],[ouachita:riverid/2],[yellowstone:riverid/2],[cheyenne:riverid/2],[green:riverid/2],[san juan:riverid/2],[missouri:riverid/2],[st. francis:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:390: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:391: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:393: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:394: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:395: query => {} | answer(A,(population(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:396: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:397: query => {[dakota:riverid/2],[wabash:riverid/2],[gila:riverid/2],[connecticut:riverid/2],[clark fork:riverid/2],[allegheny:riverid/2],[south platte:riverid/2],[washita:riverid/2],[hudson:riverid/2],[snake:riverid/2],[tombigbee:riverid/2],[chattahoochee:riverid/2],[pecos:riverid/2],[ohio:riverid/2],[arkansas:riverid/2],[roanoke:riverid/2],[colorado:riverid/2],[little missouri:riverid/2],[delaware:riverid/2],[wateree catawba:riverid/2],[cimarron:riverid/2],[white:riverid/2],[powder:riverid/2],[cumberland:riverid/2],[bighorn:riverid/2],[niobrara:riverid/2],[rock:riverid/2],[columbia:riverid/2],[tennessee:riverid/2],[smoky hill:riverid/2],[rio grande:riverid/2],[mississippi:riverid/2],[pearl:riverid/2],[potomac:riverid/2],[canadian:riverid/2],[republican:riverid/2],[red:riverid/2],[neosho:riverid/2],[north platte:riverid/2],[ouachita:riverid/2],[yellowstone:riverid/2],[cheyenne:riverid/2],[green:riverid/2],[san juan:riverid/2],[missouri:riverid/2],[st. francis:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:398: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:399: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:400: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:401: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:402: query => {[Join failed syntactically: {[texas,texas:stateid/2,texas:stateid/2,washita:riverid/2],[texas,texas:stateid/2,texas:stateid/2,irving_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,mesquite_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,corpus christi_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,grand prairie_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,red:riverid/2],[texas,texas:stateid/2,texas:stateid/2,arlington_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,beaumont_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,brownsville_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,longview_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,waco_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,guadalupe peak:placeid/2],[texas,texas:stateid/2,texas:stateid/2,lubbock_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,gulf of mexico:placeid/2],[texas,texas:stateid/2,texas:stateid/2,pasadena_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,dallas_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,fort worth_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,el paso_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,odessa_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,port arthur_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,canadian:riverid/2],[texas,texas:stateid/2,texas:stateid/2,richardson_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,abilene_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,laredo_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,tyler_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,garland_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,wichita falls_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,pecos:riverid/2],[texas,texas:stateid/2,texas:stateid/2,midland_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,plano_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,austin_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,amarillo_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,mcallen_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,san angelo_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,houston_tx:cityid/3],[texas,texas:stateid/2,texas:stateid/2,rio grande:riverid/2],[texas,texas:stateid/2,texas:stateid/2,san antonio_tx:cityid/3]}:{[rank,stateid/2,stateid/2,placeid/2],[length,stateid/2,stateid/2,mountainid/2],[date_year,stateid/2,stateid/2,riverid/2],[time_duration,stateid/2,stateid/2,lakeid/2],[money/time_duration,stateid/2,stateid/2,placeid/2],[name,stateid/2,stateid/2,mountainid/2],[date_month,stateid/2,stateid/2,cityid/3],[count,stateid/2,stateid/2,riverid/2],[date_time,stateid/2,stateid/2,riverid/2],[date,stateid/2,stateid/2,riverid/2],[length,stateid/2,stateid/2,cityid/3],[date,stateid/2,stateid/2,lakeid/2],[length^2,stateid/2,stateid/2,mountainid/2],[count,stateid/2,stateid/2,mountainid/2],[date_month,stateid/2,stateid/2,placeid/2],[money,stateid/2,stateid/2,cityid/3],[date_time,stateid/2,stateid/2,mountainid/2],[money/time_duration,stateid/2,stateid/2,cityid/3],[date_month,stateid/2,stateid/2,lakeid/2],[name,stateid/2,stateid/2,placeid/2],[time_duration,stateid/2,stateid/2,mountainid/2],[count/length^2,stateid/2,stateid/2,riverid/2],[count/length^2,stateid/2,stateid/2,lakeid/2],[date_year,stateid/2,stateid/2,placeid/2],[frac,stateid/2,stateid/2,mountainid/2],[count/length^2,stateid/2,stateid/2,cityid/3],[frac,stateid/2,stateid/2,riverid/2],[date,stateid/2,stateid/2,cityid/3],[length^2,stateid/2,stateid/2,riverid/2],[money,stateid/2,stateid/2,mountainid/2],[date_year,stateid/2,stateid/2,cityid/3],[name,stateid/2,stateid/2,riverid/2],[time_duration,stateid/2,stateid/2,placeid/2],[length,stateid/2,stateid/2,placeid/2],[date_month,stateid/2,stateid/2,mountainid/2],[rank,stateid/2,stateid/2,riverid/2],[time_duration,stateid/2,stateid/2,cityid/3],[count,stateid/2,stateid/2,cityid/3],[rank,stateid/2,stateid/2,cityid/3],[money/time_duration,stateid/2,stateid/2,riverid/2],[date_day,stateid/2,stateid/2,cityid/3],[name,stateid/2,stateid/2,cityid/3],[frac,stateid/2,stateid/2,placeid/2],[money/time_duration,stateid/2,stateid/2,mountainid/2],[date_year,stateid/2,stateid/2,lakeid/2],[count,stateid/2,stateid/2,placeid/2],[money,stateid/2,stateid/2,riverid/2],[rank,stateid/2,stateid/2,lakeid/2],[frac,stateid/2,stateid/2,cityid/3],[date_day,stateid/2,stateid/2,placeid/2],[count/length^2,stateid/2,stateid/2,mountainid/2],[date_month,stateid/2,stateid/2,riverid/2],[count,stateid/2,stateid/2,lakeid/2],[money,stateid/2,stateid/2,placeid/2],[date_year,stateid/2,stateid/2,mountainid/2],[length^2,stateid/2,stateid/2,cityid/3],[date_day,stateid/2,stateid/2,mountainid/2],[length,stateid/2,stateid/2,lakeid/2],[length,stateid/2,stateid/2,riverid/2],[date_time,stateid/2,stateid/2,cityid/3],[date_time,stateid/2,stateid/2,placeid/2],[length^2,stateid/2,stateid/2,lakeid/2],[date_time,stateid/2,stateid/2,lakeid/2],[date_day,stateid/2,stateid/2,riverid/2],[frac,stateid/2,stateid/2,lakeid/2],[name,stateid/2,stateid/2,lakeid/2],[date,stateid/2,stateid/2,placeid/2],[money/time_duration,stateid/2,stateid/2,lakeid/2],[length^2,stateid/2,stateid/2,placeid/2],[rank,stateid/2,stateid/2,mountainid/2],[date_day,stateid/2,stateid/2,lakeid/2],[date,stateid/2,stateid/2,mountainid/2],[time_duration,stateid/2,stateid/2,riverid/2],[money,stateid/2,stateid/2,lakeid/2],[count/length^2,stateid/2,stateid/2,placeid/2]}[3] and {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[alaska:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[hawaii:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]}:{[stateid/2]}[0] => {}:error]} | answer(A,largest(B,(population(A,B),state(A),loc(A,C),const(C,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:403: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:404: query => {[usa:countryid/2],[texas:stateid/2]} | answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:405: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:406: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:407: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:408: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:409: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:410: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:411: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:412: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:413: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:414: query => {[usa:countryid/2],[texas:stateid/2]} | answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:415: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:416: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:417: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:418: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:419: query => {[texas:stateid/2]} | answer(A,(state(A),const(B,cityid(austin,_)),capital(B),loc(B,A)))
+        Example tmpptxfx5vc.dlog:420: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:421: query => {[juneau_ak:cityid/3]} | answer(A,(capital(A),loc(A,B),state(B),loc(C,B),highest(C,place(C))))
+        Example tmpptxfx5vc.dlog:422: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:423: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:424: query => {[texas:stateid/2]} | answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))
+        Example tmpptxfx5vc.dlog:425: query => {[missouri:riverid/2]} | answer(A,largest(A,(river(A),loc(A,B),state(B))))
+        Example tmpptxfx5vc.dlog:426: query => {[dakota:riverid/2],[wabash:riverid/2],[gila:riverid/2],[connecticut:riverid/2],[clark fork:riverid/2],[allegheny:riverid/2],[south platte:riverid/2],[washita:riverid/2],[hudson:riverid/2],[snake:riverid/2],[tombigbee:riverid/2],[chattahoochee:riverid/2],[pecos:riverid/2],[ohio:riverid/2],[arkansas:riverid/2],[roanoke:riverid/2],[colorado:riverid/2],[little missouri:riverid/2],[delaware:riverid/2],[wateree catawba:riverid/2],[cimarron:riverid/2],[white:riverid/2],[powder:riverid/2],[cumberland:riverid/2],[bighorn:riverid/2],[niobrara:riverid/2],[rock:riverid/2],[columbia:riverid/2],[tennessee:riverid/2],[smoky hill:riverid/2],[rio grande:riverid/2],[mississippi:riverid/2],[pearl:riverid/2],[potomac:riverid/2],[canadian:riverid/2],[republican:riverid/2],[red:riverid/2],[neosho:riverid/2],[north platte:riverid/2],[ouachita:riverid/2],[yellowstone:riverid/2],[cheyenne:riverid/2],[green:riverid/2],[san juan:riverid/2],[missouri:riverid/2],[st. francis:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:427: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:428: query => {[dakota:riverid/2],[wabash:riverid/2],[gila:riverid/2],[connecticut:riverid/2],[clark fork:riverid/2],[allegheny:riverid/2],[south platte:riverid/2],[washita:riverid/2],[hudson:riverid/2],[snake:riverid/2],[tombigbee:riverid/2],[chattahoochee:riverid/2],[pecos:riverid/2],[ohio:riverid/2],[arkansas:riverid/2],[roanoke:riverid/2],[colorado:riverid/2],[little missouri:riverid/2],[delaware:riverid/2],[wateree catawba:riverid/2],[cimarron:riverid/2],[white:riverid/2],[powder:riverid/2],[cumberland:riverid/2],[bighorn:riverid/2],[niobrara:riverid/2],[rock:riverid/2],[columbia:riverid/2],[tennessee:riverid/2],[smoky hill:riverid/2],[rio grande:riverid/2],[mississippi:riverid/2],[pearl:riverid/2],[potomac:riverid/2],[canadian:riverid/2],[republican:riverid/2],[red:riverid/2],[neosho:riverid/2],[north platte:riverid/2],[ouachita:riverid/2],[yellowstone:riverid/2],[cheyenne:riverid/2],[green:riverid/2],[san juan:riverid/2],[missouri:riverid/2],[st. francis:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:429: query => {[21count]} | answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:430: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:431: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:432: query => {[texas:stateid/2]} | answer(A,(state(A),const(B,cityid(austin,_)),loc(B,A)))
+        Example tmpptxfx5vc.dlog:433: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:434: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:435: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:436: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))
+        Example tmpptxfx5vc.dlog:437: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:438: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:439: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:440: query => {[texas:stateid/2]} | answer(A,(state(A),const(B,cityid(austin,_)),capital(B),loc(B,A)))
+        Example tmpptxfx5vc.dlog:441: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:442: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),capital(B),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:443: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:444: query => {[new york_ny:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B))))
+        Example tmpptxfx5vc.dlog:445: query => {[rio grande:riverid/2]} | answer(A,longest(A,(river(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:446: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:447: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))
+        Example tmpptxfx5vc.dlog:448: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:449: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:450: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[lubbock_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[fort worth_tx:cityid/3],[houston_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[corpus christi_tx:cityid/3],[longview_tx:cityid/3],[arlington_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[austin_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[el paso_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[dallas_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[san antonio_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:451: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:452: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:453: query => {[Cost 271904.0 exceeds maximum of 100000:error]} | answer(A,(river(A),traverse(A,B),state(B),next_to(B,C),state(C),next_to(C,D),state(D)))
+        Example tmpptxfx5vc.dlog:454: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:455: query => {[oxnard_ca:cityid/3],[bristol township_pa:cityid/3],[santa barbara_ca:cityid/3],[buena park_ca:cityid/3],[fayetteville_nc:cityid/3],[orlando_fl:cityid/3],[san angelo_tx:cityid/3],[downey_ca:cityid/3],[greenville_sc:cityid/3],[concord_ca:cityid/3],[richardson_tx:cityid/3],[columbia_sc:cityid/3],[waukegan_il:cityid/3],[orange_ca:cityid/3],[pomona_ca:cityid/3],[lowell_ma:cityid/3],[charleston_sc:cityid/3],[largo_fl:cityid/3],[clearwater_fl:cityid/3],[bayonne_nj:cityid/3],[manchester_nh:cityid/3],[amarillo_tx:cityid/3],[vallejo_ca:cityid/3],[grand prairie_tx:cityid/3],[san bernardino_ca:cityid/3],[lakewood_oh:cityid/3],[bethesda_md:cityid/3],[evanston_il:cityid/3],[medford_ma:cityid/3],[san leandro_ca:cityid/3],[lakewood_co:cityid/3],[pueblo_co:cityid/3],[great falls_mt:cityid/3],[boise_id:cityid/3],[modesto_ca:cityid/3],[richmond_ca:cityid/3],[north charleston_sc:cityid/3],[westminster_ca:cityid/3],[mountain view_ca:cityid/3],[bellevue_wa:cityid/3],[reno_nv:cityid/3],[warwick_ri:cityid/3],[schenectady_ny:cityid/3],[sterling heights_mi:cityid/3],[peoria_il:cityid/3],[santa clara_ca:cityid/3],[bethlehem_pa:cityid/3],[utica_ny:cityid/3],[salem_or:cityid/3],[columbia_mo:cityid/3],[alexandria_va:cityid/3],[springfield_mo:cityid/3],[raleigh_nc:cityid/3],[winston-salem_nc:cityid/3],[portsmouth_va:cityid/3],[livonia_mi:cityid/3],[lawton_ok:cityid/3],[fargo_nd:cityid/3],[citrus heights_ca:cityid/3],[waterford_mi:cityid/3],[independence_mo:cityid/3],[silver spring_md:cityid/3],[waco_tx:cityid/3],[carson_ca:cityid/3],[bristol_ct:cityid/3],[glendale_ca:cityid/3],[wyoming_mi:cityid/3],[rochester_mn:cityid/3],[beaumont_tx:cityid/3],[oceanside_ca:cityid/3],[oak lawn_il:cityid/3],[east orange_nj:cityid/3],[scranton_pa:cityid/3],[westland_mi:cityid/3],[south gate_ca:cityid/3],[bloomington_mn:cityid/3],[royal oak_mi:cityid/3],[terre haute_in:cityid/3],[ogden_ut:cityid/3],[longview_tx:cityid/3],[anderson_in:cityid/3],[springfield_oh:cityid/3],[waterloo_ia:cityid/3],[troy_mi:cityid/3],[rockford_il:cityid/3],[somerville_ma:cityid/3],[lynn_ma:cityid/3],[quincy_ma:cityid/3],[cicero_il:cityid/3],[stockton_ca:cityid/3],[scotts valley_ca:cityid/3],[garden grove_ca:cityid/3],[east los angeles_ca:cityid/3],[huntington_wv:cityid/3],[norwalk_ct:cityid/3],[bridgeport_ct:cityid/3],[ontario_ca:cityid/3],[alhambra_ca:cityid/3],[lorain_oh:cityid/3],[penn hills_pa:cityid/3],[macon_ga:cityid/3],[costa mesa_ca:cityid/3],[irvine_ca:cityid/3],[billings_mt:cityid/3],[dearborn heights_mi:cityid/3],[wilmington_de:cityid/3],[hayward_ca:cityid/3],[irving_tx:cityid/3],[scottsdale_az:cityid/3],[cedar rapids_ia:cityid/3],[santa monica_ca:cityid/3],[kettering_oh:cityid/3],[santa rosa_ca:cityid/3],[gainesville_fl:cityid/3],[kendall_fl:cityid/3],[el cajon_ca:cityid/3],[west covina_ca:cityid/3],[arvada_co:cityid/3],[brownsville_tx:cityid/3],[sioux falls_sd:cityid/3],[kalamazoo_mi:cityid/3],[south bend_in:cityid/3],[clifton_nj:cityid/3],[chula vista_ca:cityid/3],[euclid_oh:cityid/3],[redondo beach_ca:cityid/3],[hartford_ct:cityid/3],[mesquite_tx:cityid/3],[clinton_mi:cityid/3],[burbank_ca:cityid/3],[farmington hills_mi:cityid/3],[middletown_nj:cityid/3],[pasadena_tx:cityid/3],[racine_wi:cityid/3],[youngstown_oh:cityid/3],[huntsville_al:cityid/3],[cheektowaga_ny:cityid/3],[framingham_ma:cityid/3],[monroe_la:cityid/3],[tallahassee_fl:cityid/3],[champaign_il:cityid/3],[tuscaloosa_al:cityid/3],[boulder_co:cityid/3],[berkeley_ca:cityid/3],[inglewood_ca:cityid/3],[woodbridge_nj:cityid/3],[reading_pa:cityid/3],[newport news_va:cityid/3],[wichita falls_tx:cityid/3],[fort smith_ar:cityid/3],[danbury_ct:cityid/3],[mount vernon_ny:cityid/3],[fort collins_co:cityid/3],[ann arbor_mi:cityid/3],[waltham_ma:cityid/3],[nashua_nh:cityid/3],[alameda_ca:cityid/3],[stamford_ct:cityid/3],[arlington heights_il:cityid/3],[san mateo_ca:cityid/3],[el monte_ca:cityid/3],[laredo_tx:cityid/3],[high point_nc:cityid/3],[dubuque_ia:cityid/3],[sunnyvale_ca:cityid/3],[charleston_wv:cityid/3],[fairfield_ca:cityid/3],[newport beach_ca:cityid/3],[dundalk_md:cityid/3],[meriden_ct:cityid/3],[west allis_wi:cityid/3],[lynchburg_va:cityid/3],[west hartford_ct:cityid/3],[southfield_mi:cityid/3],[paterson_nj:cityid/3],[altoona_pa:cityid/3],[lansing_mi:cityid/3],[hollywood_fl:cityid/3],[st. clair shores_mi:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[ventura_ca:cityid/3],[new bedford_ma:cityid/3],[tempe_az:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[pensacola_fl:cityid/3],[duluth_mn:cityid/3],[greenwich_ct:cityid/3],[skokie_il:cityid/3],[elyria_oh:cityid/3],[sioux city_ia:cityid/3],[bakersfield_ca:cityid/3],[niagara falls_ny:cityid/3],[thousand oaks_ca:cityid/3],[cranston_ri:cityid/3],[evansville_in:cityid/3],[trenton_nj:cityid/3],[redford_mi:cityid/3],[kenosha_wi:cityid/3],[durham_nc:cityid/3],[fremont_ca:cityid/3],[camden_nj:cityid/3],[miami beach_fl:cityid/3],[odessa_tx:cityid/3],[appleton_wi:cityid/3],[muncie_in:cityid/3],[overland park_ks:cityid/3],[green bay_wi:cityid/3],[topeka_ks:cityid/3],[edison_nj:cityid/3],[waterbury_ct:cityid/3],[hampton_va:cityid/3],[west valley_ut:cityid/3],[st. joseph_mo:cityid/3],[savannah_ga:cityid/3],[torrance_ca:cityid/3],[lakewood_ca:cityid/3],[casper_wy:cityid/3],[hammond_in:cityid/3],[irvington_nj:cityid/3],[abingdon_pa:cityid/3],[eugene_or:cityid/3],[joliet_il:cityid/3],[simi valley_ca:cityid/3],[west palm beach_fl:cityid/3],[dearborn_mi:cityid/3],[cherry hill_nj:cityid/3],[new haven_ct:cityid/3],[lawrence_ma:cityid/3],[chesapeake_va:cityid/3],[springfield_il:cityid/3],[erie_pa:cityid/3],[compton_ca:cityid/3],[levittown_ny:cityid/3],[aurora_il:cityid/3],[albany_ny:cityid/3],[elizabeth_nj:cityid/3],[pontiac_mi:cityid/3],[whittier_ca:cityid/3],[decatur_il:cityid/3],[pawtucket_ri:cityid/3],[north little rock_ar:cityid/3],[lake charles_la:cityid/3],[fullerton_ca:cityid/3],[davenport_ia:cityid/3],[fall river_ma:cityid/3],[brockton_ma:cityid/3],[midland_tx:cityid/3],[new rochelle_ny:cityid/3],[lafayette_la:cityid/3],[parma_oh:cityid/3],[allentown_pa:cityid/3],[provo_ut:cityid/3],[upper darby_pa:cityid/3],[daly city_ca:cityid/3],[salinas_ca:cityid/3],[norwalk_ca:cityid/3],[roanoke_va:cityid/3],[pasadena_ca:cityid/3],[port arthur_tx:cityid/3],[newton_ma:cityid/3],[glendale_az:cityid/3],[tyler_tx:cityid/3],[new britain_ct:cityid/3],[escondido_ca:cityid/3],[elgin_il:cityid/3],[cambridge_ma:cityid/3],[lower merion_pa:cityid/3],[irondequoit_ny:cityid/3],[norman_ok:cityid/3],[portland_me:cityid/3],[taylor_mi:cityid/3],[albany_ga:cityid/3],[hamilton_oh:cityid/3],[saginaw_mi:cityid/3],[kenner_la:cityid/3],[canton_oh:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:456: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:457: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:458: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:459: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:460: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:461: query => {[usa:countryid/2],[texas:stateid/2]} | answer(A,(loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:462: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:463: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:464: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:465: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:466: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:468: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:469: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:470: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:471: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:472: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:473: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:474: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:475: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:476: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:477: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:478: query => {[new york_ny:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),next_to(B,C),state(C))))
+        Example tmpptxfx5vc.dlog:479: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:480: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:481: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:482: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:483: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:484: query => {[alaska:stateid/2]} | answer(A,largest(A,state(A)))
+        Example tmpptxfx5vc.dlog:485: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:486: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:487: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example FAILED TO EXECUTE
+        Example FAILED TO EXECUTE
+        Example tmpptxfx5vc.dlog:490: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:491: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:492: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:493: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:494: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:495: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:496: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:497: query => {[austin_tx:cityid/3]} | answer(A,(capital(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:498: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:499: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:500: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:501: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:502: query => {[washita:riverid/2],[pecos:riverid/2],[rio grande:riverid/2],[canadian:riverid/2],[red:riverid/2]} | answer(A,(river(A),traverse(A,B),state(B),loc(C,B),highest(C,(place(C),loc(C,D),const(D,stateid(texas))))))
+        Example tmpptxfx5vc.dlog:503: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:504: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:505: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:506: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+        Example FAILED TO EXECUTE
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:508: query => {[rio grande:riverid/2]} | answer(A,largest(A,(river(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:509: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:510: query => {[4count]} | answer(A,count(B,(state(B),next_to(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:511: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:512: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:513: query => {[waukegan_il:cityid/3],[evanston_il:cityid/3],[peoria_il:cityid/3],[columbia_mo:cityid/3],[springfield_mo:cityid/3],[independence_mo:cityid/3],[rochester_mn:cityid/3],[oak lawn_il:cityid/3],[bloomington_mn:cityid/3],[waterloo_ia:cityid/3],[rockford_il:cityid/3],[cicero_il:cityid/3],[cedar rapids_ia:cityid/3],[racine_wi:cityid/3],[monroe_la:cityid/3],[champaign_il:cityid/3],[fort smith_ar:cityid/3],[arlington heights_il:cityid/3],[dubuque_ia:cityid/3],[west allis_wi:cityid/3],[duluth_mn:cityid/3],[skokie_il:cityid/3],[sioux city_ia:cityid/3],[kenosha_wi:cityid/3],[appleton_wi:cityid/3],[green bay_wi:cityid/3],[st. joseph_mo:cityid/3],[joliet_il:cityid/3],[springfield_il:cityid/3],[aurora_il:cityid/3],[decatur_il:cityid/3],[north little rock_ar:cityid/3],[lake charles_la:cityid/3],[davenport_ia:cityid/3],[lafayette_la:cityid/3],[elgin_il:cityid/3],[kenner_la:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),state(B),const(C,riverid(mississippi)),river(C),traverse(C,B)))
+        Example tmpptxfx5vc.dlog:514: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:515: query => {[new jersey:stateid/2],[new york:stateid/2],[vermont:stateid/2],[delaware:stateid/2],[iowa:stateid/2],[wisconsin:stateid/2],[nevada:stateid/2],[kentucky:stateid/2],[utah:stateid/2],[massachusetts:stateid/2],[oregon:stateid/2],[virginia:stateid/2],[indiana:stateid/2],[new hampshire:stateid/2],[south dakota:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[rhode island:stateid/2],[maine:stateid/2],[idaho:stateid/2],[colorado:stateid/2],[district of columbia:stateid/2],[louisiana:stateid/2],[alabama:stateid/2],[north dakota:stateid/2],[wyoming:stateid/2],[pennsylvania:stateid/2],[georgia:stateid/2],[michigan:stateid/2],[missouri:stateid/2],[texas:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[south carolina:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2],[arkansas:stateid/2],[washington:stateid/2],[connecticut:stateid/2],[kansas:stateid/2],[california:stateid/2],[nebraska:stateid/2],[ohio:stateid/2],[north carolina:stateid/2],[florida:stateid/2],[west virginia:stateid/2],[montana:stateid/2],[maryland:stateid/2],[arizona:stateid/2]} | answer(A,(state(A),next_to(A,B),state(B)))
+        Example tmpptxfx5vc.dlog:516: query => {[Cost 127748.0 exceeds maximum of 100000:error]} | answer(A,(state(A),next_to(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:517: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:518: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:519: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:520: query => {} | answer(A,(population(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:521: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:522: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:523: query => {[columbia_sc:cityid/3],[jefferson city_mo:cityid/3],[frankfort_ky:cityid/3],[phoenix_az:cityid/3],[baton rouge_la:cityid/3],[salt lake city_ut:cityid/3],[concord_nh:cityid/3],[boise_id:cityid/3],[harrisburg_pa:cityid/3],[richmond_va:cityid/3],[boston_ma:cityid/3],[cheyenne_wy:cityid/3],[madison_wi:cityid/3],[des moines_ia:cityid/3],[salem_or:cityid/3],[raleigh_nc:cityid/3],[carson city_nv:cityid/3],[indianapolis_in:cityid/3],[oklahoma city_ok:cityid/3],[olympia_wa:cityid/3],[jackson_ms:cityid/3],[augusta_me:cityid/3],[nashville_tn:cityid/3],[hartford_ct:cityid/3],[washington_dc:cityid/3],[little rock_ar:cityid/3],[austin_tx:cityid/3],[providence_ri:cityid/3],[tallahassee_fl:cityid/3],[lincoln_ne:cityid/3],[bismarck_nd:cityid/3],[santa fe_nm:cityid/3],[charleston_wv:cityid/3],[sacramento_ca:cityid/3],[montpelier_vt:cityid/3],[st. paul_mn:cityid/3],[lansing_mi:cityid/3],[trenton_nj:cityid/3],[columbus_oh:cityid/3],[annapolis_md:cityid/3],[atlanta_ga:cityid/3],[montgomery_al:cityid/3],[topeka_ks:cityid/3],[denver_co:cityid/3],[helena_mt:cityid/3],[springfield_il:cityid/3],[dover_de:cityid/3],[albany_ny:cityid/3],[pierre_sd:cityid/3]} | answer(A,(capital(A),loc(A,B),state(B),next_to(B,C),state(C)))
+        Example tmpptxfx5vc.dlog:524: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:525: query => {} | answer(A,(population(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:526: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:527: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),state(B),loc(C,B),capital(C),const(C,cityid(austin,_)))))
+        Example tmpptxfx5vc.dlog:528: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example FAILED TO PARSE
+        Example tmpptxfx5vc.dlog:529: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:530: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:531: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:532: query => {[iowa:stateid/2],[wisconsin:stateid/2],[kentucky:stateid/2],[mississippi:stateid/2],[minnesota:stateid/2],[louisiana:stateid/2],[missouri:stateid/2],[illinois:stateid/2],[tennessee:stateid/2],[arkansas:stateid/2]} | answer(A,(state(A),const(B,riverid(mississippi)),river(B),traverse(B,A)))
+        Example tmpptxfx5vc.dlog:533: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:534: query => {[san angelo_tx:cityid/3],[richardson_tx:cityid/3],[amarillo_tx:cityid/3],[grand prairie_tx:cityid/3],[waco_tx:cityid/3],[beaumont_tx:cityid/3],[longview_tx:cityid/3],[irving_tx:cityid/3],[brownsville_tx:cityid/3],[mesquite_tx:cityid/3],[pasadena_tx:cityid/3],[wichita falls_tx:cityid/3],[laredo_tx:cityid/3],[mcallen_tx:cityid/3],[abilene_tx:cityid/3],[garland_tx:cityid/3],[plano_tx:cityid/3],[odessa_tx:cityid/3],[midland_tx:cityid/3],[port arthur_tx:cityid/3],[tyler_tx:cityid/3]} | answer(A,(major(A),city(A),loc(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:535: query => {[houston_tx:cityid/3]} | answer(A,largest(A,(city(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:536: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:537: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:538: query => {[21count]} | answer(A,count(B,(major(B),city(B),loc(B,C),const(C,stateid(texas))),A))
+        Example tmpptxfx5vc.dlog:539: query => {[arkansas:stateid/2],[louisiana:stateid/2],[new mexico:stateid/2],[oklahoma:stateid/2]} | answer(A,(state(A),next_to(A,B),const(B,stateid(texas))))
+        Example tmpptxfx5vc.dlog:540: query => {[guadalupe peak:placeid/2]} | answer(A,highest(A,(place(A),loc(A,B),const(B,stateid(texas)))))
+        Example tmpptxfx5vc.dlog:541: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:542: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:543: query => {[49count]} | answer(A,count(B,(state(B),next_to(B,C),state(C)),A))
+        Example tmpptxfx5vc.dlog:544: query => {[california:stateid/2]} | answer(A,largest(B,(state(A),population(A,B))))
+        Example tmpptxfx5vc.dlog:545: query => {[345496count]} | answer(A,(population(B,A),const(B,cityid(austin,_))))
+        Example tmpptxfx5vc.dlog:546: query => {} | answer(A,(loc(B,A),const(B,cityid('san',_))))
+        Example tmpptxfx5vc.dlog:547: query => {[2364000count],[638000count],[23670000count],[4217000count],[4206000count],[3107000count],[4916000count],[2889000count],[10800000count],[3025000count],[2286000count],[594000count],[1303000count],[5346800count],[9746000count],[1569000count],[5737000count],[786700count],[9262000count],[7365000count],[1461000count],[4113200count],[1125000count],[2718000count],[469557count],[4700000count],[5882000count],[920600count],[944000count],[5490000count],[1950000count],[401800count],[11863000count],[800500count],[690767count],[17558000count],[652700count],[511500count],[2913000count],[2520000count],[3894000count],[5463000count],[4076000count],[2633000count],[14229000count],[947200count],[3121800count],[4591000count],[964000count],[11400000count]} | answer(A,(population(B,A),state(B)))
+        Example tmpptxfx5vc.dlog:548: query => {[texas:stateid/2]} | answer(A,(state(A),loc(B,A),highest(B,(place(B),loc(B,C),const(C,stateid(texas))))))
+      } [10s, cum. 21s]
+    } [21s, cum. 21s]
+    Randomly splitting 541 general examples
+    379 training examples, 162 test examples
+  } [21s, cum. 21s]
+  Execution directory: /Users/yi-changchung/Desktop/OSU/CSE5525/HW3/state/execs/33.exec
+} [21s]

@@ -136,7 +136,7 @@ class RNNDecoder(nn.Module):
     
     
 class RNNDecoder(nn.Module):
-    def __init__(self, emb_size: int, hidden_size: int, output_size: bool):
+    def __init__(self, emb_size: int, hidden_size: int, output_size: int):
         super(RNNDecoder, self).__init__()
         self.embedder = nn.Embedding(output_size, emb_size)
         self.rnn = nn.LSTM(emb_size, hidden_size)
@@ -150,9 +150,10 @@ class RNNDecoder(nn.Module):
         return output, hidden
     
 class RNNAttnDecoder(nn.Module):
-    def __init__(self, emb_size: int, hidden_size: int, output_size: bool, dropout=0):
+    def __init__(self, emb_size: int, hidden_size: int, output_size: int, max_len: int):
         super(RNNDecoder, self).__init__()
-        self.embedder = EmbeddingLayer(emb_size, output_size, dropout)
+        self.embedder = nn.Embedding(output_size, emb_size)
+        self.arrn = nn.Linear(self.hidden_size * 2, max_len)
         self.rnn = nn.LSTM(emb_size, hidden_size)
         self.out = nn.Linear(hidden_size, output_size)
         self.softmax = nn.LogSoftmax(dim=1)

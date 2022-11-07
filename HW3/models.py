@@ -150,16 +150,35 @@ class RNNDecoder(nn.Module):
         return output, hidden
     
 class RNNAttnDecoder(nn.Module):
-    def __init__(self, emb_size: int, hidden_size: int, output_size: int, max_len: int):
-        super(RNNDecoder, self).__init__()
+    # Implements the general attention as descriped in Luong et al. (2015)
+    def __init__(self, emb_size: int, hidden_size: int, output_size: int):
+        super(RNNAttnDecoder, self).__init__()
         self.embedder = nn.Embedding(output_size, emb_size)
-        self.arrn = nn.Linear(self.hidden_size * 2, max_len)
-        self.rnn = nn.LSTM(emb_size, hidden_size)
-        self.out = nn.Linear(hidden_size, output_size)
+        self.rnn = nn.LSTM(emb_size + hidden_size, hidden_size)
+        self.attn = nn.Linear(hidden_size, hidden_size)
+        self.out = nn.Linear(hidden_size * 2, output_size)
         self.softmax = nn.LogSoftmax(dim=1)
 
-    def forward(self, input, hidden):
-        output = self.embedder(input)
-        output, hidden = self.rnn(output, hidden)
-        output = self.softmax(self.out(output.squeeze(0)))
-        return output, hidden
+    def forward(self, input, hidden, last_context, encoder_outputs):
+        # input:            [1 x 1]
+        # hidden:           ([1 x 1 x 200], [1 x 1 x 200])
+        # last_context:     [1 x 200]
+        # encoder_outputs:  [input_length x 1 x 200]
+        
+        output = self.embedder(input) # [1 x 1 x 200]
+
+        output = torch.cat((output, last_context.unsqueeze(0)), 2) # [1 x 1 x 400]
+        output, hidden = self.rnn(output, hidden)  # [1 x 1 x 200], hidden
+        
+        seq_len = len(encoder_outputs)
+        attn_weights = torch.autograd.Variable(torch.zeros(seq_len)) # [inp_len]
+        
+        for i in range(seq_len):
+            energy = self.attn(encoder_outputs[i].squeeze(0))
+            attn_weights[i] = output.squeeze().dot(energy)
+        attn_weights = F.softmax(attn_weights, 0).unsqueeze(0).unsqueeze(0) # [1 x 1 x inp_len]
+        context = attn_weights.bmm(encoder_outputs.transpose(0, 1)) # [1 x 1 x 200]
+        context = context.squeeze(1) # [1 x 200]
+        
+        output = self.softmax(self.out(torch.cat((output.squeeze(0), context), 1))) # [1 x 153]
+        return output, hidden, context

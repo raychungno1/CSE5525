@@ -22,6 +22,8 @@ def _parse_args():
     # General system running and configuration options
     parser.add_argument('--do_nearest_neighbor', dest='do_nearest_neighbor',
                         default=False, action='store_true', help='run the nearest neighbor model')
+    parser.add_argument('--attention', dest='attention',
+                        default=False, action='store_true', help='run the nearest neighbor model')
 
     parser.add_argument('--train_path', type=str,
                         default='data/geo_train.tsv', help='path to train data')
@@ -39,7 +41,7 @@ def _parse_args():
                         help='RNG seed (default = 0)')
     parser.add_argument('--epochs', type=int, default=10,
                         help='num epochs to train for')
-    parser.add_argument('--lr', type=float, default=.01)
+    parser.add_argument('--lr', type=float, default=.1)
     parser.add_argument('--batch_size', type=int, default=2, help='batch size')
     # 65 is all you need for GeoQuery
     parser.add_argument('--decoder_len_limit', type=int,
@@ -90,12 +92,13 @@ class NearestNeighborSemanticParser(object):
 
 
 class Seq2SeqSemanticParser(object):
-    def __init__(self, enc_emb, encoder, decoder, output_indexer, output_max_len):
+    def __init__(self, enc_emb, encoder, decoder, output_indexer, output_max_len, args):
         self.enc_emb = enc_emb
         self.encoder = encoder
         self.decoder = decoder
         self.output_indexer = output_indexer
         self.output_max_len = output_max_len
+        self.args = args
 
     def decode(self, test_data: List[Example]) -> List[List[Derivation]]:
         result = []
@@ -106,13 +109,17 @@ class Seq2SeqSemanticParser(object):
             i_len = torch.tensor([len(example.x_indexed)])
 
             # Encode input
-            _, _, hidden = encode_input_for_decoder(input, i_len, self.enc_emb, self.encoder)
+            encoder_outputs, _, hidden = encode_input_for_decoder(input, i_len, self.enc_emb, self.encoder)
 
             # Generate output until <EOS> token or max output length is reached
             words = []
             decoder_input = torch.tensor([[self.output_indexer.index_of("<SOS>")]])
+            decoder_context = torch.zeros(1, args.hidden_size)
             for _ in range(self.output_max_len):
-                decoder_output, hidden = self.decoder(decoder_input, hidden)
+                if args.attention:
+                    decoder_output, hidden, decoder_context = self.decoder(decoder_input, hidden, decoder_context, encoder_outputs)
+                else:
+                    decoder_output, hidden = self.decoder(decoder_input, hidden)
                 choice = torch.argmax(decoder_output).item()
                 word = self.output_indexer.get_object(choice)
                 if word == "<EOS>": break
@@ -213,7 +220,10 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
     # Initialize model
     enc_emb = EmbeddingLayer(args.embed_size, len(input_indexer), 0)
     encoder = RNNEncoder(args.embed_size, args.hidden_size, False)
-    decoder = RNNDecoder(args.embed_size, args.hidden_size, len(output_indexer))
+    if args.attention:
+        decoder = RNNAttnDecoder(args.embed_size, args.hidden_size, len(output_indexer))
+    else:
+        decoder = RNNDecoder(args.embed_size, args.hidden_size, len(output_indexer))
 
     # Initialize optimizer
     enc_emb_optimizer = optim.Adam(enc_emb.parameters())
@@ -230,23 +240,33 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
 
         # Loop through shuffled examples
         for input, i_len, target, t_len in data:
-            input = torch.from_numpy(input.reshape(1, input_max_len))
-            i_len = torch.tensor([i_len])
-            target = torch.from_numpy(target)
-
+            input = torch.from_numpy(input.reshape(1, input_max_len)) # [1 x 19]
+            i_len = torch.tensor([i_len]) # [1]
+            target = torch.from_numpy(target) # [65]
+        
             # Zero gradients
             enc_emb_optimizer.zero_grad()
             encoder_optimizer.zero_grad()
             decoder_optimizer.zero_grad()
 
             # Encode input
-            _, _, hidden = encode_input_for_decoder(input, i_len, enc_emb, encoder)
+            # encoder_output:   [input_length x 1 x 200]
+            # context_mask:     [1 x input_length]
+            # hidden:           ([1 x 1 x 200], [1 x 1 x 200])
+            encoder_outputs, _, hidden = encode_input_for_decoder(input, i_len, enc_emb, encoder)
 
-            # Accumulating error using teacher forcing 
+            # Accumulating error w/ teacher forcing 
+            # decoder_input:    [1 x 1]
+            # decoder_context:  [1 x 200]
+            # decoder_outputs:   [1 x 153]
             loss = 0
             decoder_input = torch.tensor([[output_indexer.index_of("<SOS>")]])
+            decoder_context = torch.zeros(1, args.hidden_size)
             for di in range(t_len):
-                decoder_output, hidden = decoder(decoder_input, hidden)
+                if args.attention:
+                    decoder_output, hidden, decoder_context = decoder(decoder_input, hidden, decoder_context, encoder_outputs)
+                else:
+                    decoder_output, hidden = decoder(decoder_input, hidden)
                 loss += criterion(decoder_output, target[di:di+1])
                 decoder_input = torch.tensor([[target[di]]])
 
@@ -257,7 +277,7 @@ def train_model_encdec(train_data: List[Example], test_data: List[Example], inpu
             decoder_optimizer.step()
             total_loss += loss.item()
         print(f"Epoch {epoch}\tTime: {round(time.time() - start, 2)}\tLoss: {total_loss}")
-    return Seq2SeqSemanticParser(enc_emb, encoder, decoder, output_indexer, output_max_len)
+    return Seq2SeqSemanticParser(enc_emb, encoder, decoder, output_indexer, output_max_len, args)
 
 
 def evaluate(test_data: List[Example], decoder, example_freq=50, print_output=True, outfile=None):

@@ -51,17 +51,44 @@ class RNNLanguageModel(LanguageModel):
         self.model_emb = model_emb
         self.model_dec = model_dec
         self.vocab_index = vocab_index
+        
+    def parse_context(self, context):
+        curr_state = (torch.from_numpy(np.zeros(self.model_dec.hidden_size)).unsqueeze(0).unsqueeze(1).float(),
+                      torch.from_numpy(np.zeros(self.model_dec.hidden_size)).unsqueeze(0).unsqueeze(1).float())
+
+        context = [self.vocab_index.index_of(c) for c in context]
+        context = np.asarray(context)
+
+        for i in range(0, len(context) - 1):
+            input_th = torch.from_numpy(np.asarray(context[i]))
+            embedded = self.model_emb.forward(input_th)
+            _, curr_state = self.model_dec.forward(embedded, curr_state)
+        input_th = torch.from_numpy(np.asarray(context[-1]))
+        
+        return input_th, curr_state
 
     def get_next_char_log_probs(self, context):
+        input_th, curr_state = self.parse_context(context)
 
-        # Hint: check the train_rnn_lm to see how to cal the RNN model correctly
-        print(context)
-        # raise Exception("Implement me")
+        embedded = self.model_emb.forward(input_th)
+        log_probs, _ = self.model_dec.forward(embedded, curr_state)
+        log_probs = log_probs.squeeze()
+        
+        return log_probs.detach().numpy()
 
     def get_log_prob_sequence(self, next_chars, context):
-        print(next_chars)
-        print(context)
-        raise Exception("Implement me")
+        input_th, curr_state = self.parse_context(context)
+        input = [self.vocab_index.index_of(c) for c in next_chars]
+        input = np.asarray(input)
+        
+        seq_prob = 0
+        for i in range(0, len(input)):
+            embedded = self.model_emb.forward(input_th)
+            log_probs, curr_state = self.model_dec.forward(embedded, curr_state)
+            seq_prob += log_probs.squeeze()[input[i]]
+            input_th = torch.from_numpy(np.asarray(input[i]))
+        
+        return seq_prob.item()
 
 
 class TransformerLanguageModel(LanguageModel):
@@ -132,9 +159,18 @@ class RNNDecoder(nn.Module):
             nn.init.xavier_uniform_(self.rnn.weight.data, gain=1)
 
     def forward(self, embedded_input, state):
+        # print("-BEGIN-")
+        # print(embedded_input)
+        # print(embedded_input.size())
         output, state = self.rnn(embedded_input.unsqueeze(0).unsqueeze(0), state)
+        # print(output)
+        # print(output.size())
         output = self.output_layer(output)
-        output = self.log_softmax_layer(output)
+        # print(output)
+        # print(output.size())
+        output = self.log_softmax_layer(output.squeeze(0))
+        # print(output)
+        # print(output.size())
         return output, state
 
 

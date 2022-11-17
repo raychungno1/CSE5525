@@ -44,7 +44,7 @@ def train_rnn_lm(args, train_text, dev_text, vocab_index):
     chunk_len = 20
     batch_starts = [i * (chunk_len - burn_in) for i in range(0, int(len(train_text) / chunk_len))]
 
-    num_epochs = 5
+    num_epochs = 1
 
     for t in range(0, num_epochs):
         epoch_start = time.time()

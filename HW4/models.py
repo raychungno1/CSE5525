@@ -96,6 +96,10 @@ class TransformerLanguageModel(LanguageModel):
     def __init__(self, model_dec, vocab_index):
         self.model_dec = model_dec
         self.vocab_index = vocab_index
+        
+    def parse_context(self, context):
+        context = [self.vocab_index.index_of(c) for c in context]
+        context = np.asarray(context)
 
     def get_next_char_log_probs(self, context):
         raise Exception("Implement me")
@@ -186,18 +190,26 @@ class TransformerDecoder(nn.Module):
         self.out_layer = nn.Linear(d, num_classes)
 
     def forward(self, x):
+        # x = (b, t)
 
         # step 1: get token and position embeddings
-        token = self.token_emb(x)
-        pos = self.pos_emb(x)
-
+        tokens = self.token_emb(x) # (b, t, e)
+        b, t, e = tokens.size()
+        
+        pos = torch.arange(t)
+        pos = self.pos_emb(x)[None, :, :].expand(b, t, e)
+        # (t) => (t, e) => (b, t, e)
+        
         # step 2: pass them through Transformer blocks
+        x = self.trans_blocks(tokens + pos)
+        # (b, t, e)
 
         # step 3: pass the outputlayer
+        x = self.out_layer(x.mean(dim=1))
+        # (b, t, e) => (b, e) => (b, num_classes)
 
         # step 4: pass the log_softmax layer
-
-        raise Exception("Implement me")
+        return F.log_softmax(x, dim=1)
 
 
 class TransformerBlock(nn.Module):
@@ -218,14 +230,16 @@ class TransformerBlock(nn.Module):
     def forward(self, x):
 
         # step 1: self-attention
+        attended = self.attention(x)
 
         # step 2: residual + layer norm
+        x = self.norm_1(attended + x)
 
         # step 3: FFN/MLP
+        feedforward = self.ff(x)
 
         # step 4: residual + layer norm
-
-        raise Exception("Implement me")
+        return self.norm_2(feedforward + x)
 
 
 class SelfAttention(nn.Module):
@@ -241,28 +255,39 @@ class SelfAttention(nn.Module):
         self.linear_unify = nn.Linear(d * h, d)
 
     def forward(self, x):
-
         b, t, e = x.size()
         h = self.h
         
         # step 1: transform x to key/query/value
-        key = self.linear_key(x)
-        query = self.linear_query(x)
-        value = self.linear_value(x)
+        keys = self.linear_key(x).view(b, t, h, e)
+        queries = self.linear_query(x).view(b, t, h, e)
+        values = self.linear_value(x).view(b, t, h, e)
+        # (b, t, e) => (b, t, h*e) => (b, t, h, e)
+        
+        keys = keys.transpose(1, 2).contiguous().view(b*h, t, e)
+        queries = queries.transpose(1, 2).contiguous().view(b*h, t, e)
+        values = values.transpose(1, 2).contiguous().view(b*h, t, e)
+        # (b, t, h, e) => (b*h, t, e)
 
-        # step 2: scaled do product between key and query to get attention
-        dot = torch.bmm(query, key.transpose(1, 2)) / math.sqrt(e)
+        # step 2: scaled dot product between key and query to get attention
+        dot = torch.bmm(queries, keys.transpose(1, 2)) / math.sqrt(e)
+        # (b*h, t, e) * (b*h, e, t) => (b*h, t, t)
 
         # step 3: casual masking (you may use torch.triu_indices)
         if self.mask:
             mask = torch.triu_indices(t, t, offset=1)
             dot[:, mask[0], mask[1]] = float('-inf')
+            # (b*h, t, t)
 
         # step 4: softmax over attention
         dot = F.softmax(dot, dim=2)
-
+        # (b*h, t, t)
+        
         # step 5: multiply attention with value
-        out = torch.bmm(dot, value)
-
+        out = torch.bmm(dot, values).view(b, h, t, e)
+        # (b*h, t, t) * (b*h, t, e) => (b*h, t, e) => (b, h, t, e)
+        
         # step 6: another linear layer for output
+        out = out.transpose(1, 2).contiguous().view(b, t, h*e)
         return self.linear_unify(out)
+        # (b, h, t, e) => (b, t, h*e) => (b, t, e)

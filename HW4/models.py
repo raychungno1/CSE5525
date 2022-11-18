@@ -4,6 +4,7 @@ import numpy as np
 import random
 import time
 import collections
+import math
 
 import torch
 import torch.nn as nn
@@ -159,18 +160,9 @@ class RNNDecoder(nn.Module):
             nn.init.xavier_uniform_(self.rnn.weight.data, gain=1)
 
     def forward(self, embedded_input, state):
-        # print("-BEGIN-")
-        # print(embedded_input)
-        # print(embedded_input.size())
         output, state = self.rnn(embedded_input.unsqueeze(0).unsqueeze(0), state)
-        # print(output)
-        # print(output.size())
         output = self.output_layer(output)
-        # print(output)
-        # print(output.size())
         output = self.log_softmax_layer(output.squeeze(0))
-        # print(output)
-        # print(output.size())
         return output, state
 
 
@@ -196,6 +188,8 @@ class TransformerDecoder(nn.Module):
     def forward(self, x):
 
         # step 1: get token and position embeddings
+        token = self.token_emb(x)
+        pos = self.pos_emb(x)
 
         # step 2: pass them through Transformer blocks
 
@@ -248,16 +242,27 @@ class SelfAttention(nn.Module):
 
     def forward(self, x):
 
+        b, t, e = x.size()
+        h = self.h
+        
         # step 1: transform x to key/query/value
+        key = self.linear_key(x)
+        query = self.linear_query(x)
+        value = self.linear_value(x)
 
         # step 2: scaled do product between key and query to get attention
+        dot = torch.bmm(query, key.transpose(1, 2)) / math.sqrt(e)
 
         # step 3: casual masking (you may use torch.triu_indices)
+        if self.mask:
+            mask = torch.triu_indices(t, t, offset=1)
+            dot[:, mask[0], mask[1]] = float('-inf')
 
         # step 4: softmax over attention
+        dot = F.softmax(dot, dim=2)
 
         # step 5: multiply attention with value
+        out = torch.bmm(dot, value)
 
         # step 6: another linear layer for output
-
-        raise Exception("Implement me")
+        return self.linear_unify(out)

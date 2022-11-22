@@ -52,7 +52,7 @@ class RNNLanguageModel(LanguageModel):
         self.model_emb = model_emb
         self.model_dec = model_dec
         self.vocab_index = vocab_index
-        
+
     def parse_context(self, context):
         curr_state = (torch.from_numpy(np.zeros(self.model_dec.hidden_size)).unsqueeze(0).unsqueeze(1).float(),
                       torch.from_numpy(np.zeros(self.model_dec.hidden_size)).unsqueeze(0).unsqueeze(1).float())
@@ -62,33 +62,33 @@ class RNNLanguageModel(LanguageModel):
 
         for i in range(0, len(context) - 1):
             input_th = torch.from_numpy(np.asarray(context[i]))
-            embedded = self.model_emb.forward(input_th)
-            _, curr_state = self.model_dec.forward(embedded, curr_state)
+            embedded = self.model_emb(input_th)
+            _, curr_state = self.model_dec(embedded, curr_state)
         input_th = torch.from_numpy(np.asarray(context[-1]))
-        
+
         return input_th, curr_state
 
     def get_next_char_log_probs(self, context):
         input_th, curr_state = self.parse_context(context)
 
-        embedded = self.model_emb.forward(input_th)
-        log_probs, _ = self.model_dec.forward(embedded, curr_state)
+        embedded = self.model_emb(input_th)
+        log_probs, _ = self.model_dec(embedded, curr_state)
         log_probs = log_probs.squeeze()
-        
+
         return log_probs.detach().numpy()
 
     def get_log_prob_sequence(self, next_chars, context):
         input_th, curr_state = self.parse_context(context)
         input = [self.vocab_index.index_of(c) for c in next_chars]
         input = np.asarray(input)
-        
+
         seq_prob = 0
         for i in range(0, len(input)):
-            embedded = self.model_emb.forward(input_th)
-            log_probs, curr_state = self.model_dec.forward(embedded, curr_state)
+            embedded = self.model_emb(input_th)
+            log_probs, curr_state = self.model_dec(embedded, curr_state)
             seq_prob += log_probs.squeeze()[input[i]]
             input_th = torch.from_numpy(np.asarray(input[i]))
-        
+
         return seq_prob.item()
 
 
@@ -96,16 +96,31 @@ class TransformerLanguageModel(LanguageModel):
     def __init__(self, model_dec, vocab_index):
         self.model_dec = model_dec
         self.vocab_index = vocab_index
-        
+
     def parse_context(self, context):
         context = [self.vocab_index.index_of(c) for c in context]
-        context = np.asarray(context)
+        return torch.from_numpy(np.asarray(context)).unsqueeze(0)
 
     def get_next_char_log_probs(self, context):
-        raise Exception("Implement me")
+        context = self.parse_context(context)
+
+        log_probs = self.model_dec(context)
+        log_probs = log_probs.squeeze()
+
+        return log_probs.detach().numpy()
 
     def get_log_prob_sequence(self, next_chars, context):
-        raise Exception("Implement me")
+        context = self.parse_context(context)
+        input = [self.vocab_index.index_of(c) for c in next_chars]
+        input = np.asarray(input)
+
+        seq_prob = 0
+        for i in range(0, len(input)):
+            log_probs = self.model_dec(context)
+            seq_prob += log_probs.squeeze()[input[i]]
+            context = torch.cat((context, torch.from_numpy(np.asarray([[input[i]]]))), 1)
+
+        return seq_prob.item()
 
 
 # Embedding layer that has a lookup table of symbols that is [full_dict_size x input_dim]. Includes dropout.
@@ -164,7 +179,8 @@ class RNNDecoder(nn.Module):
             nn.init.xavier_uniform_(self.rnn.weight.data, gain=1)
 
     def forward(self, embedded_input, state):
-        output, state = self.rnn(embedded_input.unsqueeze(0).unsqueeze(0), state)
+        output, state = self.rnn(
+            embedded_input.unsqueeze(0).unsqueeze(0), state)
         output = self.output_layer(output)
         output = self.log_softmax_layer(output.squeeze(0))
         return output, state
@@ -193,13 +209,13 @@ class TransformerDecoder(nn.Module):
         # x = (b, t)
 
         # step 1: get token and position embeddings
-        tokens = self.token_emb(x) # (b, t, e)
+        tokens = self.token_emb(x)  # (b, t, e)
         b, t, e = tokens.size()
-        
+
         pos = torch.arange(t)
-        pos = self.pos_emb(x)[None, :, :].expand(b, t, e)
+        pos = self.pos_emb(pos)[None, :, :].expand(b, t, e)
         # (t) => (t, e) => (b, t, e)
-        
+
         # step 2: pass them through Transformer blocks
         x = self.trans_blocks(tokens + pos)
         # (b, t, e)
@@ -257,13 +273,13 @@ class SelfAttention(nn.Module):
     def forward(self, x):
         b, t, e = x.size()
         h = self.h
-        
+
         # step 1: transform x to key/query/value
         keys = self.linear_key(x).view(b, t, h, e)
         queries = self.linear_query(x).view(b, t, h, e)
         values = self.linear_value(x).view(b, t, h, e)
         # (b, t, e) => (b, t, h*e) => (b, t, h, e)
-        
+
         keys = keys.transpose(1, 2).contiguous().view(b*h, t, e)
         queries = queries.transpose(1, 2).contiguous().view(b*h, t, e)
         values = values.transpose(1, 2).contiguous().view(b*h, t, e)
@@ -282,11 +298,11 @@ class SelfAttention(nn.Module):
         # step 4: softmax over attention
         dot = F.softmax(dot, dim=2)
         # (b*h, t, t)
-        
+
         # step 5: multiply attention with value
         out = torch.bmm(dot, values).view(b, h, t, e)
         # (b*h, t, t) * (b*h, t, e) => (b*h, t, e) => (b, h, t, e)
-        
+
         # step 6: another linear layer for output
         out = out.transpose(1, 2).contiguous().view(b, t, h*e)
         return self.linear_unify(out)

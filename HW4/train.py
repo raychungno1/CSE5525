@@ -103,6 +103,46 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
     num_layers = 2
     max_length = 512
     model_dec = TransformerDecoder(emb_dim, hidden_size, num_layers, max_length, len(vocab_index), len(vocab_index))
+    model_dec.zero_grad()
+    model_dec.train()
+    optimizer = optim.Adam(model_dec.parameters(), lr=1e-3)
 
-    raise Exception("Implement me")
+    burn_in = 0
+    chunk_len = 20
+    batch_starts = [i * (chunk_len - burn_in) for i in range(0, int(len(train_text) / chunk_len))]
 
+    num_epochs = 5
+    
+    for t in range(0, num_epochs):
+        epoch_start = time.time()
+        loss_this_epoch = 0.0
+        
+        random.shuffle(batch_starts)
+        num_done = 0
+        for batch_idx in batch_starts:
+            if num_done % 100 == 0:
+                print(repr(num_done))
+                
+            (input, output) = form_input_output(vocab_index, train_text, batch_idx, chunk_len)
+            loss_fcn = nn.NLLLoss()
+            loss = 0
+            
+            context = torch.tensor([[]], dtype=torch.int32)
+            for i in range(0, len(input)):
+                context = torch.cat((context, torch.from_numpy(np.asarray([[input[i]]]))), 1)
+                log_probs = model_dec.forward(context)
+                log_probs = log_probs.squeeze()
+                y_onehot = torch.from_numpy(np.asarray([0 if j != output[i] else 1 for j in range(0, len(vocab_index))])).float()
+                loss += - log_probs.dot(y_onehot)
+            loss_this_epoch += loss.item() / len(train_text)
+            model_dec.zero_grad()
+            loss.backward()
+            optimizer.step()
+            num_done += 1
+
+        print(repr(f"Finished epoch {t} with loss {loss_this_epoch} in time {time.time() - epoch_start}"))
+        decoder = TransformerLanguageModel(model_dec, vocab_index)
+        if t % 10 == 9:
+            model_dec.eval()
+    model_dec.eval()
+    return decoder

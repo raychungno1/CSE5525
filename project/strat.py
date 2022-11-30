@@ -3,6 +3,7 @@ import time
 import random
 import json
 import openai
+from typing import Union
 from dotenv import load_dotenv
 
 from utils import *
@@ -12,7 +13,7 @@ def prompt_to_str(prev: str, prompt: dict):
     return prev + "Q: " + prompt["question"] + "\nA: " + " ".join(prompt["facts"]) + " #### " + str(prompt["answer"]) + "\n\n"
 
 
-def ans_to_soln(answer: str | bool) -> bool:
+def ans_to_soln(answer: Union[str, bool]) -> bool:
     if isinstance(answer, bool):
         return answer
     splits = answer.split("#### ")
@@ -86,4 +87,3 @@ if __name__ == "__main__":
               f"\tHard: {hard_correct}" +
               f"\tHard Accuracy: {num_correct_hard}/{total_prompts} ({round(100 * num_correct_hard/total_prompts, 2)}%)" +
               f"\tTime: {round(end - start, 2)}")
-        

@@ -111,7 +111,7 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
     chunk_len = 20
     batch_starts = [i * (chunk_len - burn_in) for i in range(0, int(len(train_text) / chunk_len))]
 
-    num_epochs = 5
+    num_epochs = 20
     
     for t in range(0, num_epochs):
         epoch_start = time.time()
@@ -130,18 +130,6 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
             log_probs = log_probs.squeeze()
             y_onehot = torch.from_numpy(np.asarray([0 if j != output[-1] else 1 for j in range(0, len(vocab_index))])).float()
             loss = -log_probs.dot(y_onehot)
-            # print(input)
-            # print(output)
-            # print(log_probs)
-            # print(y_onehot)
-            # return
-            # context = torch.tensor([[]], dtype=torch.int32)
-            # for i in range(0, len(input)):
-            #     context = torch.cat((context, torch.from_numpy(np.asarray([[input[i]]]))), 1)
-            #     log_probs = model_dec.forward(context)
-            #     log_probs = log_probs.squeeze()
-            #     y_onehot = torch.from_numpy(np.asarray([0 if j != output[i] else 1 for j in range(0, len(vocab_index))])).float()
-            #     loss += - log_probs.dot(y_onehot)
             loss_this_epoch += loss.item() / len(train_text)
             model_dec.zero_grad()
             loss.backward()

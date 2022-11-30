@@ -126,14 +126,22 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
             (input, output) = form_input_output(vocab_index, train_text, batch_idx, chunk_len)
             loss_fcn = nn.NLLLoss()
             loss = 0
-            
-            context = torch.tensor([[]], dtype=torch.int32)
-            for i in range(0, len(input)):
-                context = torch.cat((context, torch.from_numpy(np.asarray([[input[i]]]))), 1)
-                log_probs = model_dec.forward(context)
-                log_probs = log_probs.squeeze()
-                y_onehot = torch.from_numpy(np.asarray([0 if j != output[i] else 1 for j in range(0, len(vocab_index))])).float()
-                loss += - log_probs.dot(y_onehot)
+            log_probs = model_dec.forward(torch.from_numpy(np.asarray([input])))
+            log_probs = log_probs.squeeze()
+            y_onehot = torch.from_numpy(np.asarray([0 if j != output[-1] else 1 for j in range(0, len(vocab_index))])).float()
+            loss = -log_probs.dot(y_onehot)
+            # print(input)
+            # print(output)
+            # print(log_probs)
+            # print(y_onehot)
+            # return
+            # context = torch.tensor([[]], dtype=torch.int32)
+            # for i in range(0, len(input)):
+            #     context = torch.cat((context, torch.from_numpy(np.asarray([[input[i]]]))), 1)
+            #     log_probs = model_dec.forward(context)
+            #     log_probs = log_probs.squeeze()
+            #     y_onehot = torch.from_numpy(np.asarray([0 if j != output[i] else 1 for j in range(0, len(vocab_index))])).float()
+            #     loss += - log_probs.dot(y_onehot)
             loss_this_epoch += loss.item() / len(train_text)
             model_dec.zero_grad()
             loss.backward()

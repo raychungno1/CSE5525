@@ -98,8 +98,8 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
     :param vocab_index: an Indexer of the character vocabulary (27 characters)
     :return: an TransformerLanguageModel instance trained on the given data
     """
-    emb_dim = 20
-    hidden_size = 20
+    emb_dim = 50
+    hidden_size = 50
     num_layers = 2
     max_length = 512
     model_dec = TransformerDecoder(emb_dim, hidden_size, num_layers, max_length, len(vocab_index), len(vocab_index))
@@ -111,7 +111,7 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
     chunk_len = 20
     batch_starts = [i * (chunk_len - burn_in) for i in range(0, int(len(train_text) / chunk_len))]
 
-    num_epochs = 20
+    num_epochs = 5
     
     for t in range(0, num_epochs):
         epoch_start = time.time()
@@ -126,6 +126,7 @@ def train_transformer_lm(args, train_text, dev_text, vocab_index):
             (input, output) = form_input_output(vocab_index, train_text, batch_idx, chunk_len)
             loss_fcn = nn.NLLLoss()
             loss = 0
+            
             log_probs = model_dec.forward(torch.from_numpy(np.asarray([input])))
             log_probs = log_probs.squeeze()
             y_onehot = torch.from_numpy(np.asarray([0 if j != output[-1] else 1 for j in range(0, len(vocab_index))])).float()

@@ -1,48 +1,48 @@
 import os
+import re
 import time
 import random
-import json
 import openai
-from typing import Union
 from dotenv import load_dotenv
+from datasets import load_dataset
 
 from utils import *
 
 
-def prompt_to_str(prev: str, prompt: dict):
-    return prev + "Q: " + prompt["question"] + "\nA: " + " ".join(prompt["facts"]) + " #### " + str(prompt["answer"]) + "\n\n"
+def prompt_to_str(prev: str, prompt: dict) -> str:
+    return prev + "Q: " + prompt["question"] + "\nA: " + prompt["answer"].replace("\n", " ") + "\n\n"
 
 
-def ans_to_soln(answer: Union[str, bool]) -> bool:
-    if isinstance(answer, bool):
-        return answer
+def ans_to_soln(answer: str) -> float:
     splits = answer.split("#### ")
     if len(splits) > 1:
-        return splits[1] == "True"
-    return False
+        num = re.sub(r'[^0-9]', '', splits[1])
+        if num:
+            return float(num)
+    return float("nan")
 
 
-def prep_strat_data(seed: int, num_prompts: int, data_path: str):
+def prep_math_data(seed: int, num_prompts: int):
     random.seed(seed)
-    with open(data_path, "r", encoding="utf8") as myfile:
-        dataset = json.load(myfile)
+    dataset = load_dataset("gsm8k", "main")
 
-    # simple:   644 samples
-    # medium:   1219 samples
-    # hard:     427 samples
-    # total:    2290 samples
+    # simple:   4805 samples
+    # medium:   3593 samples
+    # hard:     394 samples
+    # total:    8792 samples
     simple, medium, hard = [], [], []
-    for d in dataset:
-        steps = len(d["decomposition"])
-        if steps <= 2:
-            d["diffifulty"] = "simple"
-            simple.append(d)
-        elif steps <= 3:
-            d["diffifulty"] = "medium"
-            medium.append(d)
-        else:
-            d["diffifulty"] = "hard"
-            hard.append(d)
+    for split in dataset:
+        for d in dataset[split]:
+            steps = d["answer"].count("\n")
+            if steps <= 3:
+                d["diffifulty"] = "simple"
+                simple.append(d)
+            elif steps <= 6:
+                d["diffifulty"] = "medium"
+                medium.append(d)
+            else:
+                d["diffifulty"] = "hard"
+                hard.append(d)
     total = simple[:300] + medium[:300] + hard[:300]
 
     simple_prompts = create_prompts(simple, num_prompts, prompt_to_str)
@@ -51,7 +51,7 @@ def prep_strat_data(seed: int, num_prompts: int, data_path: str):
     print("----- SIMPLE -----\n", simple_prompts)
     print("----- MEDIUM -----\n", medium_prompts)
     print("----- HARD -----\n", hard_prompts)
-
+    
     return total, simple_prompts, medium_prompts, hard_prompts
 
 
@@ -59,15 +59,14 @@ if __name__ == "__main__":
     SEED = 0
     NUM_PROMPTS = 6
     ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-    DATA_PATH = os.path.join(ROOT_PATH, "data", "strategyqa_train.json")
-    RESULTS_PATH = os.path.join(ROOT_PATH, "results", "strategyqa")
+    RESULTS_PATH = os.path.join(ROOT_PATH, "results", "gsm8k")
 
     load_dotenv()
     openai.api_key = os.getenv("OPENAI_API_KEY")
     (total,
      simple_prompts,
      medium_prompts,
-     hard_prompts) = prep_strat_data(SEED, NUM_PROMPTS, DATA_PATH)
+     hard_prompts) = prep_math_data(SEED, NUM_PROMPTS)
 
     num_correct_simple = 0
     num_correct_medium = 0

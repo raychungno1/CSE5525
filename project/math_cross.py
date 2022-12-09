@@ -1,60 +1,27 @@
 import os
-import re
 import time
-import random
 import openai
 from dotenv import load_dotenv
-from datasets import load_dataset
 
 from utils import *
-
-
-def prompt_to_str(prev: str, prompt: dict) -> str:
-    return prev + "Q: " + prompt["question"] + "\nA: " + prompt["answer"].replace("\n", " ") + "\n\n"
-
-
-def ans_to_soln(answer: str) -> float:
-    splits = answer.split("#### ")
-    if len(splits) > 1:
-        num = re.sub(r'[^0-9]', '', splits[1])
-        if num:
-            return float(num)
-    return float("nan")
-
+from maths import prep_math_data, ans_to_soln
+from strat import prep_strat_data
 
 if __name__ == "__main__":
     SEED = 0
     NUM_PROMPTS = 6
     ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-    RESULTS_PATH = os.path.join(ROOT_PATH, "results", "gsm8k")
+    STRAT_DATA_PATH = os.path.join(ROOT_PATH, "data", "strategyqa_train.json")
+
+    RESULTS_PATH = os.path.join(ROOT_PATH, "results", "gsm8k-cross")
 
     load_dotenv()
-    random.seed(SEED)
-    dataset = load_dataset("gsm8k", "main")
     openai.api_key = os.getenv("OPENAI_API_KEY")
-
-    # simple:   4805 samples
-    # medium:   3593 samples
-    # hard:     394 samples
-    # total:    8792 samples
-    simple, medium, hard = [], [], []
-    for split in dataset:
-        for d in dataset[split]:
-            steps = d["answer"].count("\n")
-            if steps <= 3:
-                d["diffifulty"] = "simple"
-                simple.append(d)
-            elif steps <= 6:
-                d["diffifulty"] = "medium"
-                medium.append(d)
-            else:
-                d["diffifulty"] = "hard"
-                hard.append(d)
-    total = simple[:300] + medium[:300] + hard[:300]
-
-    simple_prompts = create_prompts(simple, NUM_PROMPTS, prompt_to_str)
-    medium_prompts = create_prompts(medium, NUM_PROMPTS, prompt_to_str)
-    hard_prompts = create_prompts(hard, NUM_PROMPTS, prompt_to_str)
+    (total, _, _, _) = prep_math_data(SEED, NUM_PROMPTS)
+    (_,
+     simple_prompts,
+     medium_prompts,
+     hard_prompts) = prep_strat_data(SEED, NUM_PROMPTS, STRAT_DATA_PATH)
 
     num_correct_simple = 0
     num_correct_medium = 0

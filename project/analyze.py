@@ -49,4 +49,5 @@ for dirname in os.listdir(RESULTS_PATH):
         f"medium\t\t{ratio_string(medium_counts['simple'], 300)}\t\t{ratio_string(medium_counts['medium'], 300)}\t\t{ratio_string(medium_counts['hard'], 300)}\t\t{ratio_string(medium_counts['all'], 900)}")
     print(
         f"hard\t\t{ratio_string(hard_counts['simple'], 300)}\t\t{ratio_string(hard_counts['medium'], 300)}\t\t{ratio_string(hard_counts['hard'], 300)}\t\t{ratio_string(hard_counts['all'], 900)}")
-    
+    print(
+        f"total\t\t{ratio_string(simple_counts['simple'] + medium_counts['simple'] + hard_counts['simple'], 900)}\t\t{ratio_string(simple_counts['medium'] + medium_counts['medium'] + hard_counts['medium'], 900)}\t\t{ratio_string(simple_counts['hard'] + medium_counts['hard'] + hard_counts['hard'], 900)}")
